@@ -50,7 +50,18 @@ gap: 8rem;
     background-color:#f18548 ;
   }
 
-  
+  h3{
+      font-family: "acumin-variable", sans-serif;
+      font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
+      font-size: 3rem;
+      color: #b5db84;
+  }
+  .kampagne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#134546 ;
+  }
 
 * {
   margin: 0;
