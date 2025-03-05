@@ -48,7 +48,7 @@
   padding: 5rem 0 5rem 0;
  
  }
- #slogan{
+ .slogan{
   width: 30rem;
   height: auto;
  }
@@ -58,11 +58,15 @@
     align-items: center;
     z-index: 1;
     margin: 0 auto;
-    gap: 8rem;
+    gap: 5rem;
     background-color:#f9e67b;
     box-shadow:1px -6px 53px -11px #a89947;
   }
 
+  .forstetreøl img{
+    width: 40rem;
+    margin-left: -4rem;
+  }
 
   h1{
     font-family: "acumin-variable", sans-serif;
@@ -71,11 +75,36 @@
     color: #403836;
     rotate: 305deg;
 }
+
+
   h3{
       font-family: "acumin-variable", sans-serif;
       font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
       font-size: 4rem;
       color: #b5db84;
+  }
+
+  h4{
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 900, 'wdth' 60, 'slnt' -12;
+    font-size: 4.5rem;
+    color: #403836;
+  }
+  h5{
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 900, 'wdth' 60, 'slnt' -12;
+    font-size: 3.5rem;
+    margin-top: -1rem;
+    margin-left: -6rem;
+    color: #403836;
+  }
+  h6{
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 900, 'wdth' 60, 'slnt' -12;
+    font-size: 2rem;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    color: #403836;
   }
 
   p{

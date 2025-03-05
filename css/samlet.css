@@ -33,16 +33,15 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
-    font-weight: 750;
-    font-style: italic;
+    font-weight: 950;
     font-size: 16px;
     padding: 18px;
-    color: #403836;
+    color: #3e3735;
     display: block;
 }
 
 header .navbar ul li a:hover {
-    background: #333;
+    background: #3e3735;
     color: #fff;
 }
 
