@@ -1,11 +1,11 @@
 * {
-
+    outline: 1px solid red;
 }
 
 body{
     font-family: 'Poppins', sans-serif; /* Standard font */
-    position: relative;
     width: 100%;
+    height: 100%;
    }
 
    .nyhed {
@@ -38,12 +38,13 @@ body{
 
 .container-box {
     display: flex; /* Brug flexbox til at arrangere elementerne */
-    justify-content: space-between; /* Placerer kasserne ved siden af hinanden */
     background-color: #f9e67b;
     z-index: 1;
     margin-top: -30px;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+    max-height: 630px;
 }
 
 .box {
@@ -238,4 +239,51 @@ body{
 /* 🎨 Justering af pilen, når dropdown åbnes */
 .dropdown-btn.open .arrow {
     transform: rotate(180deg); /* Roter pilen */
+}
+
+/* Ny boks med omvendt rækkefølge */
+.container-box-reverse {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d8a657; /* Ny baggrundsfarve for variation */
+    z-index: 1;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Omvendt tekstboks */
+.box-right-reverse {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.box-right-reverse h2 {
+    font-size: 80px;
+    color: #403836;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.box-right-reverse p {
+    font-size: 27px;
+    color: #555;
+    text-align: left;
+    padding-top: 5px;
+}
+
+/* Omvendt billedboks */
+.box-left-reverse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-left-reverse .passiondf-reverse {
+    width: 100%;
+    height: auto;
+    margin-right: 120px; /* Billedet flyttes til højre */
 }
