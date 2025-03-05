@@ -53,14 +53,27 @@ gap: 8rem;
   h3{
       font-family: "acumin-variable", sans-serif;
       font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
-      font-size: 3rem;
+      font-size: 4rem;
       color: #b5db84;
+  }
+
+  p{
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: #DFD3C6;
   }
   .kampagne{
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color:#134546 ;
+    background-color:#134546;
+    height:25rem;
+  }
+  .overskriftkampange{
+    margin-bottom: 2rem;
+  }
+  .kampangetekst{
+    margin-left: 5rem;
+    width: 27rem;
   }
 
 * {
