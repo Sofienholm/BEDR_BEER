@@ -1,7 +1,11 @@
+* {
+    outline: 1px solid red;
+}
+
 body{
     font-family: 'Poppins', sans-serif; /* Standard font */
-    position: relative;
     width: 100%;
+    height: 100%;
    }
 
    .nyhed {
@@ -14,7 +18,7 @@ body{
 .cta-container {
     position: relative; /* Sørger for, at .cta-button forbliver fast */
     bottom: 180px;
-    left: 190px;
+    margin-left: 195px;
 }
 
 .cta-button {
@@ -34,23 +38,23 @@ body{
 
 .container-box {
     display: flex; /* Brug flexbox til at arrangere elementerne */
-    justify-content: space-between; /* Placerer kasserne ved siden af hinanden */
     background-color: #f9e67b;
     z-index: 1;
     margin-top: -30px;
-
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    max-height: 630px;
 }
 
 .box {
     flex: 1; /* Begge kasser fylder lige meget */
     height: 630px; /* Sætter højden på kasserne */
     display: flex;
-    align-items: center; /* Centrerer indholdet vertikalt */
-    justify-content: center; /* Centrerer indholdet horisontalt */
 }
 
 .box-left .passiondf {
-    max-width: 150%; /* Sikrer at billedet fylder hele bredden af boksen */
+    width: 150%; /* Sikrer at billedet fylder hele bredden af boksen */
     height: auto; /* Bevarer billedets proportioner */
     margin-left: 150px;
 }
@@ -65,9 +69,9 @@ body{
 .box-right h2 {
     font-size: 80px; /* Størrelse på overskriften */
     color: #403836; /* Farve på overskriften */
-    margin-bottom: 0; /* Giver lidt afstand under overskriften */
     text-align: left;
-    margin-top: -200px;
+    margin-left: 120px;
+    margin-top: 60px;
 }
 
 .box-right p {
@@ -76,12 +80,14 @@ body{
     text-align: left;
     align-items: flex-start; /* Sørger for, at alt flugter til venstre */
     padding-top: 5px; /* Eventuelt lidt padding for at finjustere placering */
+    margin-left: 120px;
 }
 
 .uicon {
     max-width: 125%; /* Sikrer at billedet fylder hele bredden af boksen */
     height: 50px; /* Bevarer billedets proportioner */
-    margin-top: 10px;
+    margin-top: 35px;
+    margin-left: 120px;
 }
 
 /* 🎨 Dropdown-containeren */
@@ -90,7 +96,9 @@ body{
     align-items: center; /* Centrerer indholdet vertikalt */
     margin-top: 530px;
     position: relative;
-    right: 30%;
+    right: 22%;
+    gap: 20px;
+    margin-top: 225px;
 }
 
 /* 🎨 Pil roterer, når dropdown åbnes */
@@ -171,7 +179,6 @@ body{
     transform: scale(1.01); /* Skalerer lidt mindre end før */
 }
 
-
 /* 🎨 Højre boks med tekst */
 .text-box {
     max-width: 800px;
@@ -224,7 +231,59 @@ body{
     height: 630px; /* Sætter højden på kasserne */
 }
 
+.dropdown-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
 /* 🎨 Justering af pilen, når dropdown åbnes */
 .dropdown-btn.open .arrow {
     transform: rotate(180deg); /* Roter pilen */
+}
+
+/* Ny boks med omvendt rækkefølge */
+.container-box-reverse {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d8a657; /* Ny baggrundsfarve for variation */
+    z-index: 1;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Omvendt tekstboks */
+.box-right-reverse {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.box-right-reverse h2 {
+    font-size: 80px;
+    color: #403836;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.box-right-reverse p {
+    font-size: 27px;
+    color: #555;
+    text-align: left;
+    padding-top: 5px;
+}
+
+/* Omvendt billedboks */
+.box-left-reverse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-left-reverse .passiondf-reverse {
+    width: 100%;
+    height: auto;
+    margin-right: 120px; /* Billedet flyttes til højre */
 }

@@ -24,10 +24,13 @@
  .introbillede{
  justify-self: center;
  z-index: 0;
+ margin-bottom: -2.1rem;
+ margin-top: -1.5rem;
+ 
  }
  .introbillede img{
-  width: 30rem;
-  height: auto;
+  width: 40rem;
+  height: 30rem;
  }
 
  .forstetreøl img{
@@ -46,11 +49,57 @@
     align-items: center;
     z-index: 1;
     margin: 0 auto;
-gap: 8rem;
-    background-color:#f18548 ;
+    gap: 8rem;
+    background-color:#f9e67b;
+    box-shadow:1px -6px 53px -11px #a89947;
   }
 
-  
+  h3{
+      font-family: "acumin-variable", sans-serif;
+      font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
+      font-size: 4rem;
+      color: #b5db84;
+  }
+
+  p{
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: #DFD3C6;
+  }
+  .kampagne{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color:#134546;
+    height:25rem;
+  }
+  .overskriftkampange{
+    margin-bottom: 2rem;
+    margin-top: -5rem;
+  }
+
+  .kampangetekst{
+    width: 27rem;
+  }
+
+  .cta-button {
+    background-color: #403836; /* Baggrund */
+    color: #f9e582; /* Tekst farve */
+    padding: 15px 30px; /* Indvendig afstand */
+    text-decoration: none; /* Fjerner understregning på linket */
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 800, 'wdth' 50, 'slnt' -12;
+    font-size: 1.2rem;
+    border-radius: 5px; /* Runde hjørner */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 5;
+}
+
+.cta-button:hover {
+    background-color: #fbaa1b; /* Ændrer baggrundsfarven ved hover */
+    transform: scale(1.05); /* Gør knappen lidt større, når man holder musen over den */
+}
+
 
 * {
   margin: 0;
