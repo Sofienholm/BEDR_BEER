@@ -1,3 +1,9 @@
+
+/*fejlfinder på hjemmesiden*/ 
+
+    
+
+
 /* Generel styling for hele siden */
     body {
     font-family: 'Poppins', sans-serif; /* Ændrer skrifttypen på hele siden */
@@ -24,7 +30,8 @@
     margin-bottom: 0px;
 }
 
-.newsletter-overskrift {
+/*overskrift*/
+.newsletter-form h2 {
     font-size: 2rem;
     color: #E1D4C7;
     padding-right: 260px;
@@ -34,8 +41,8 @@
 
     
 }
-
-.newsletter-tekst {
+/*tekst*/
+.newsletter-form p {
     font-size: 0.8rem;
     margin-bottom: 10px;
     color: #E1D4C7; 
@@ -45,10 +52,8 @@
     
     
 } 
-.h2{
-    color: #403836;
-}
-.newsletter-navn {
+/*navn knap*/
+.newsletter-form form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -62,8 +67,8 @@
     
      
 }
-
-.newsletter-email {
+/*email knap*/
+.newsletter-form input {
     padding: 5px;
     font-size: 100%;
     border-radius: 10px;
@@ -78,8 +83,8 @@
     
     
 }
-
-.newsletter-knap {
+/*tilmeld knap*/
+.newsletter-form button {
     background-color: #E1D4C7;
     padding: 12px;
     font-size: 1.0rem;
@@ -95,4 +100,63 @@
 .newsletter-form button:hover {
     background-color: #b38456; 
     font-family: 'Poppins', sans-serif; 
+}
+
+
+
+/* Sikrer, at popup er skjult som standard */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Sikrer at den er øverst */
+}
+
+/* Popup indhold */
+.popup-content {
+    background: #403836;
+    color: #E1D4C7;
+    padding: 80px;
+    border-radius: 30px;
+    text-align: center;
+    width: 150%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 20%;
+    border: 2px solid #f9e67b; /* Tykkelse, type og farve */
+    padding: 25px; /* Afstand inden i boksen */
+}
+
+
+/* Luk-knap */
+.close-popup {
+   position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Når popup'en er aktiv */
+.popup-container.show {
+    display: flex !important;
+}
+
+/* Effekt når popup aktiveres */
+.popup-content {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.popup-container.show .popup-content {
+    transform: scale(1);
+    opacity: 1;
 }
