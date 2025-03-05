@@ -11,7 +11,6 @@
 
 /* Use your variables on elements */
  main {
-   color: var(--contrast);
    background-color: var(--backgr);
  }
 
@@ -50,6 +49,8 @@
 gap: 8rem;
     background-color:#f18548 ;
   }
+
+  
 
 * {
   margin: 0;
