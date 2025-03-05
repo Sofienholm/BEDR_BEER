@@ -109,9 +109,8 @@ Så bliv fuld på fællesksab med BEDR BEER!
 
   <div class="parallax-container">
     <section class="parallax-section s1">
-        <div class="bg">
+        <div></div>
         <h1>GUILTY PASSION</h1>
-      </div>
         <model-viewer 
             class="beer-can" 
             src="models/passssiiiooonnn.glb" 
@@ -151,6 +150,36 @@ Så bliv fuld på fællesksab med BEDR BEER!
     </section>
   </div>
   
+  <section class="newsletter-container">
+    <div class="newsletter-form">
+        <h2>Nyhedsbrev</h2>
+        <p>Modtag eksklusive rabatter, nyheder & smagstests direkte i din indbakke</p> 
+        <form id="newsletter-form">
+            <input type="text" id="name" placeholder="Skriv dit navn" required>
+            <input type="email" id="email" placeholder="Indtast din email" required>
+            <button type="submit">TILMELD DIG</button>
+        </form>
+    </div>
+</section>
+
+<!-- Popup bekræftelse -->
+<div id="confirmation-popup" class="popup-container">
+  <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h2>Tak for din tilmelding!</h2>
+      <p>Du er nu tilmeldt vores nyhedsbrev.</p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      let name = localStorage.getItem("subscriberName");
+      if (name) {
+          document.querySelector("h1").textContent = `Tak for din tilmelding, ${name}!`;
+          localStorage.removeItem("subscriberName"); // Rydder navn efter brug
+      }
+  });
+</script>
 
 
   </main>
@@ -179,6 +208,7 @@ Så bliv fuld på fællesksab med BEDR BEER!
 </footer>
   <script src="js/js.js"></script>
   <script src="js/header.js"></script>
+
  
 </body>
 </html>
