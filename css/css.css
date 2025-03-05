@@ -24,10 +24,13 @@
  .introbillede{
  justify-self: center;
  z-index: 0;
+ margin-bottom: -2.1rem;
+ margin-top: -1.5rem;
+ 
  }
  .introbillede img{
-  width: 30rem;
-  height: auto;
+  width: 40rem;
+  height: 30rem;
  }
 
  .forstetreøl img{
@@ -47,7 +50,8 @@
     z-index: 1;
     margin: 0 auto;
     gap: 8rem;
-    background-color:#f18548 ;
+    background-color:#f9e67b;
+    box-shadow:1px -6px 53px -11px #a89947;
   }
 
   h3{
@@ -68,8 +72,6 @@
     justify-content: right;
     background-color:#134546;
     height:25rem;
-   
-
   }
   .overskriftkampange{
     margin-bottom: 2rem;
