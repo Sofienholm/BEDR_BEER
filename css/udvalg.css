@@ -40,7 +40,7 @@ html, body{
 
 .container-box {
     display: flex; /* Brug flexbox til at arrangere elementerne */
-    background-color: #f9e67b;
+    
     z-index: 1;
     margin-top: -30px;
     flex-wrap: wrap;
@@ -48,7 +48,24 @@ html, body{
     position: relative;
     max-height: 630px;
 }
-
+#olet{
+    background-color: #f9e67b;
+}
+#olto{
+    background-color: #e88b9b;
+}
+#oltre{
+    background-color: #f9e67b;
+}
+#olfire{
+    background-color: #f9e67b;
+}
+#olfem{
+    background-color: #f9e67b;
+}
+#olseks{
+    background-color: #f9e67b;
+}
 .box {
     flex: 1; /* Begge kasser fylder lige meget */
     height: 630px; /* Sætter højden på kasserne */
@@ -85,22 +102,17 @@ html, body{
     margin-left: 120px;
 }
 
-.uicon {
-    max-width: 125%; /* Sikrer at billedet fylder hele bredden af boksen */
-    height: 50px; /* Bevarer billedets proportioner */
-    margin-top: 35px;
-    margin-left: 120px;
-}
+
 
 /* 🎨 Dropdown-containeren */
 .dropdown-container {
     display: inline-flex; /* Sørger for, at teksten og knappen placeres horisontalt */
     align-items: center; /* Centrerer indholdet vertikalt */
-    margin-top: 530px;
-    position: relative;
-    right: 22%;
+  
+  
+
     gap: 20px;
-    margin-top: 225px;
+
 }
 
 /* 🎨 Pil roterer, når dropdown åbnes */
@@ -288,4 +300,47 @@ html, body{
     width: 130%; /* Sikrer at billedet fylder hele bredden af boksen */
     height: auto; /* Bevarer billedets proportioner */
     margin-left: 150px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+}
+.icon {
+
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.icon img {
+    width: 100%;
+    height: auto;
+}
+.icon img:hover {
+   background-color: #fbaa1b;
+    border-radius: 50%;
+}
+.popup {
+
+ 
+    transform: translateX(-50%);
+    transform: translateY(-300%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 6rem;
+    text-align: center;
+    
+}
+.ikonn{
+    position: relative;
+   left: 120px;
+   top: 40px;
+
+    
 }

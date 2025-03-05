@@ -60,14 +60,11 @@
       <a href="https://www.eksempel.com" class="cta-button">Klik her for at komme i gang</a>
       </div>
     </div>
-<div class="popup" onclick="myFunction()">
-  <img src="images/dåseknap.png" alt=""
-  <span class="popuptext" id="myPopup">A Simple Popup!</span>
-</div>
+
     <main>
 
 
-        <div class="container-box">
+        <div class="container-box" id="olet">
             <div class=" box box-left">
                 <img src="images/passiondf.png" alt="Billede" class="passiondf">
             </div>
@@ -77,16 +74,26 @@
                     consectetuer adipiscing elit, 
                     <br>sed diam nonummy nibh<br> euismod 
                     tincidunt ut laoreet dolore </p>
-                    <img src="images/uicon.png" alt="Billede" class="uicon">
-            </div>
+                    <div class="ikonn">
+                      <div class="icon-container">
+                        <div class="icon" data-text="Passion" data-img="images/passionknap.png"></div>
+                        <div class="icon" data-text="Low Calorie" data-img="images/lowknap-11.png"></div>
+                        <div class="icon" data-text="Lys Øl" data-img="images/lysknap.png"></div>
+                        <div class="icon" data-text="Fås i Dåse" data-img="images/dåseknap.png"></div>
+                        <div class="icon" data-text="Fås i Flaske" data-img="images/flaskeknap.png"></div>
+                      </div>
+            
 
-            <div class="dropdown-container">
-              <span class="dropdown-text">SE INDHOLD</span>
-              <button class="dropdown-btn" onclick="toggleDropdown()">
-                  <span class="arrow">▲</span>
-              </button>
+                      <div class="dropdown-container">
+                        <span class="dropdown-text">SE INDHOLD</span>
+                       <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <span class="arrow">▲</span>
+                      </button>
+                      </div>
+                    </div>
+               </div>
           </div>
-        </div>
+          
   
       <!-- 📌 Dropdown-boks, der fylder hele siden -->
       <div class="dropdown-box" id="beerBox">
@@ -109,19 +116,37 @@
       </div>
 
             <!-- Ny boks med omvendt layout -->
-<div class="container-box-reverse">
-  <div class="box box-right-reverse">
-      <h2>BEDR BEER</h2>
-      <p>Her er en ny tekst, der beskriver<br> 
-          den fantastiske smag af vores nye øl.
-          <br>Prøv den i dag og oplev forskellen!</p>
-      <img src="images/uicon.png" alt="Billede" class="uicon">
-  </div>
+            <div class="container-box" id="olto">
+              <div class=" box box-left">
+                  <h2>BEDR BEER</h2>
+                  <p>Lorem ipsum dolor sit amet,<br> 
+                      consectetuer adipiscing elit, 
+                      <br>sed diam nonummy nibh<br> euismod 
+                      tincidunt ut laoreet dolore </p>
+                      <div class="ikonn">
+                        <div class="icon-container">
+                          <div class="icon" data-text="Passion" data-img="images/passionknap.png"></div>
+                          <div class="icon" data-text="Low Calorie" data-img="images/lowknap-11.png"></div>
+                          <div class="icon" data-text="Lys Øl" data-img="images/lysknap.png"></div>
+                          <div class="icon" data-text="Fås i Dåse" data-img="images/dåseknap.png"></div>
+                          <div class="icon" data-text="Fås i Flaske" data-img="images/flaskeknap.png"></div>
+                        </div>
+              
   
-  <div class="box box-left-reverse">
-      <img src="images/passiondf.png" alt="Billede" class="passiondf-reverse">
-  </div>
-</div>
+                        <div class="dropdown-container">
+                          <span class="dropdown-text">SE INDHOLD</span>
+                         <button class="dropdown-btn" onclick="toggleDropdown()">
+                          <span class="arrow">▲</span>
+                        </button>
+                        </div>
+                      </div>
+              </div>
+              <div class="box box-right">
+                <img src="images/passiondf.png" alt="Billede" class="passiondf">
+                 </div>
+
+
+            </div>
 
     </main>
 
