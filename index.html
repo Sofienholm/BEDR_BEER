@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BedrBeer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/samlet.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+  <header>
+  
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="#">Bryggeriet</a>
+            <ul>
+                <li><a href="#">Om BEDR BEER</a></li>
+                <li><a href="#">Events</a> </li>
+            </ul>
+          </li>
+
+            <li><a href="#">Udvalg</a>
+                <ul>
+                    <li><a href="udvalg.html">Øl</a></li>
+                    <li><a href="#">Andmeldelser</a> </li>
+                </ul>
+              </li>
+
+              <li href="index.html" class="logo">
+                <img src="images/logo5.png" alt="logo">
+              </li>
+
+            <li><a href="#">Kampange</a></li>
+            
+         
+            <li class="search-box">
+              <button class="search-toggle">
+                <img src="images/søge.png" alt="Søg" class="search-icon">
+              </button>
+              <input type="text" class="search-input" placeholder="Søg...">
+            </li>
+            
+</ul>
+    </nav>
+
+
+</header>
+
+  <main>
+<div class="introbillede">
+  <img src="images/hænder.svg" alt="hænder som skåler">
+
+</div>
+
+<article class="forstetreøl">
+  <div>
+<img src="images/stock.svg" alt="">
+  </div>
+  <div>
+<img id="slogan" src="images/slogan.png" alt="">
+  </div>
+
+</article>
+
+<article class="kampagne">
+  <div>
+<img src="images/stock.svg" alt="">
+<h3>
+
+</h3> 
+<p>
+  
+</p>
+ </div>
+  <div>
+<img id="slogan" src="images/slogan.png" alt="">
+  </div>
+
+</article>
+  <div class="parallax-container">
+    <section class="parallax-section s1">
+        <div class="bg"></div>
+        <h1>GUILTY PASSION</h1>
+        <model-viewer 
+            class="beer-can" 
+            src="models/passssiiiooonnn.glb" 
+            alt="3D Øldåse"
+          
+            auto-rotate
+            shadow-intensity="1"
+            exposure="1.2"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            disable-zoom>
+        </model-viewer>
+    </section>
+  
+    <section class="parallax-section s2">
+        <div class="bg"></div>
+        <h1>LUSTY RAZZ</h1>
+        <model-viewer 
+            class="beer-can" 
+            src="models/hindbærrrrrrr.glb" 
+            alt="3D Øldåse"
+            auto-rotate
+            camera-controls>
+        </model-viewer>
+    </section>
+  
+    <section class="parallax-section s3">
+        <div class="bg"></div>
+        <h1>ZESTY CITRUS</h1>
+        <model-viewer 
+            class="beer-can" 
+            src="models/citrooooonnn.glb" 
+            alt="3D Øldåse"
+            auto-rotate
+            camera-controls>
+        </model-viewer>
+    </section>
+  </div>
+  
+
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <p><a>Kontakt os</a></p>
+                <p><a>Om Zero Buzz Brew</a></p>
+                <p><a>Levering & pakkeshop</a></p>
+            </div>
+            <div class="footer-column">
+                <p><a>FAQ</a></p>
+                <p><a>Handelsbetingelser</a></p>
+                <p><a>Privatlivspolitik & cookies</a></p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/faceicon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instaicon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/tiktokicon.png" alt="TikTok"></a>
+        </div>            
+    </div>
+
+</footer>
+  <script src="js/js.js"></script>
+  <script src="js/header.js"></script>
+ 
+</body>
+</html>
