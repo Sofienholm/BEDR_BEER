@@ -46,7 +46,7 @@
     align-items: center;
     z-index: 1;
     margin: 0 auto;
-gap: 8rem;
+    gap: 8rem;
     background-color:#f18548 ;
   }
 
@@ -65,16 +65,39 @@ gap: 8rem;
   .kampagne{
     display: flex;
     align-items: center;
+    justify-content: right;
     background-color:#134546;
     height:25rem;
+   
+
   }
   .overskriftkampange{
     margin-bottom: 2rem;
+    margin-top: -5rem;
   }
+
   .kampangetekst{
-    margin-left: 5rem;
     width: 27rem;
   }
+
+  .cta-button {
+    background-color: #403836; /* Baggrund */
+    color: #f9e582; /* Tekst farve */
+    padding: 15px 30px; /* Indvendig afstand */
+    text-decoration: none; /* Fjerner understregning på linket */
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 800, 'wdth' 50, 'slnt' -12;
+    font-size: 1.2rem;
+    border-radius: 5px; /* Runde hjørner */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 5;
+}
+
+.cta-button:hover {
+    background-color: #fbaa1b; /* Ændrer baggrundsfarven ved hover */
+    transform: scale(1.05); /* Gør knappen lidt større, når man holder musen over den */
+}
+
 
 * {
   margin: 0;
