@@ -5,3 +5,8 @@ function toggleDropdown() {
     box.classList.toggle("show");
     button.classList.toggle("open");
 }
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
