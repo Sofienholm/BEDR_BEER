@@ -1,18 +1,20 @@
 body{
     font-family: 'Poppins', sans-serif; /* Standard font */
     position: relative;
+    width: 100%;
    }
 
    .nyhed {
     width: 100%;       /* Ændrer bredden af billedet */
     height: auto;       /* Bevarer billedets proportioner */
     z-index: 0;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .cta-container {
-    position: absolute; /* Sørger for, at .cta-button forbliver fast */
-    top: 39%;           /* Placerer knappen 50% fra toppen af containeren (eller skærmen) */
-    left: 12%;          /* Placerer knappen 50% fra venstre side */
+    position: relative; /* Sørger for, at .cta-button forbliver fast */
+    bottom: 180px;
+    left: 190px;
 }
 
 .cta-button {
@@ -33,9 +35,10 @@ body{
 .container-box {
     display: flex; /* Brug flexbox til at arrangere elementerne */
     justify-content: space-between; /* Placerer kasserne ved siden af hinanden */
-    margin-top: -7px; /* Fjernet den negative margin */
     background-color: #f9e67b;
     z-index: 1;
+    margin-top: -30px;
+
 }
 
 .box {
@@ -101,6 +104,7 @@ body{
     max-height: 1000px;
     opacity: 1;
     padding: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* 🎨 Wrapper til indholdet */
