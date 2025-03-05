@@ -34,7 +34,7 @@
  }
  .intrologo{
   margin-bottom: -20rem;
-  margin-left: 15rem;
+  margin-left: 20rem;
  }
 
  .introbillede img{
@@ -71,7 +71,7 @@
   h1{
     font-family: "acumin-variable", sans-serif;
     font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
-    font-size: 7rem;
+    font-size: 6rem;
     color: #403836;
     rotate: 305deg;
 }
