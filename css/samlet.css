@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 header {
     background: #E1D4C7;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -129,10 +128,7 @@ footer {
         background-color: #114547;
         color: #dfd3c6;
         padding: 24px;
-       
     }
-
-
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
