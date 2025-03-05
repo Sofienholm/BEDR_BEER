@@ -1,11 +1,13 @@
 * {
-    outline: 1px solid red;
+
 }
 
-body{
+html, body{
     font-family: 'Poppins', sans-serif; /* Standard font */
-    width: 100%;
     height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
    }
 
    .nyhed {
@@ -222,7 +224,7 @@ body{
     overflow: hidden;
     max-height: 0;
     padding: 0 20px;
-    transition: max-height 0.5s ease-out, padding 0.3s ease, opacity 0.3s ease;
+    transition: max-height 1s ease-out, padding 0.3s ease, opacity 1s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     opacity: 0;
     z-index: 1000;
@@ -283,7 +285,7 @@ body{
 }
 
 .box-left-reverse .passiondf-reverse {
-    width: 100%;
-    height: auto;
-    margin-right: 120px; /* Billedet flyttes til højre */
+    width: 130%; /* Sikrer at billedet fylder hele bredden af boksen */
+    height: auto; /* Bevarer billedets proportioner */
+    margin-left: 150px;
 }
