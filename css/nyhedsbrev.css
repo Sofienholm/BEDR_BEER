@@ -21,12 +21,21 @@
     padding: 20px 20px; /* Reduktion af padding for bedre visning */
     width: 80%; /* Fyld hele bredden af forælderen */
     max-width: 800px; /* Maksimal bredde */
-    text-align: center; /* Centrerer indholdet */
+    text-align: center;
     margin: 10px auto; /* Centrerer containeren på siden */
 
+.newsletter-container {
+    background-color: #403836; /* Baggrundsfarve */
+    border-radius: 600px 600px 0 0 ; /* Halv cirkel nederst */
+    padding: 20px 20px; /* Reduktion af padding for bedre visning */
+    width: 80%; /* Fyld hele bredden af forælderen */
+    max-width: 800px; /* Maksimal bredde */
+    text-align: center;
+    margin: 10px auto; /* Centrerer containeren på siden */
+    
     padding-left: 270px;
     font-family: 'Poppins', sans-serif; 
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -44,10 +53,14 @@
 /*tekst*/
 .newsletter-form p {
     font-size: 0.8rem;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 15px;
     color: #E1D4C7; 
-    padding-right: 260px;
+    padding-right: 400px;
     font-family: 'Poppins', sans-serif;
+    white-space: nowrap; /* Tvinger teksten til at blive på én linje */
+    
+    
     
     
     
@@ -58,9 +71,10 @@
     flex-direction: column;
     gap: 20px;
     color: #E1D4C7;
-    text-decoration: underline;
-   padding-right: 15px;
+   padding-right: 50px;
    font-family: 'Poppins', sans-serif; 
+
+   
  
    
    
@@ -79,6 +93,73 @@
     font-family: 'Poppins', sans-serif; 
     height: 50px;
     text-underline-position: below;
+    flex-direction: column;
+    
+    
+    
+    
+    
+}
+    padding-left: 270px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*overskrift*/
+.newsletter-form h2 {
+    font-size: 2rem;
+    color: #E1D4C7;
+    padding-right: 260px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif; 
+    
+
+    
+}
+/*tekst*/
+.newsletter-form p {
+    font-size: 1.0rem;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: #E1D4C7; 
+    padding-right: 260px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+    
+} 
+/*navn knap*/
+.newsletter-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #E1D4C7;
+   padding-right: 50px;
+   font-family: 'Poppins', sans-serif; 
+
+   
+ 
+   
+   
+    
+     
+}
+/*email knap*/
+.newsletter-form input {
+    padding: 5px;
+    font-size: 100%;
+    border-radius: 10px;
+    width: 50%;
+    background-color: #E1D4C7;
+    text-decoration: underline;
+    padding-right: 50px;
+    font-family: 'Poppins', sans-serif; 
+    height: 50px;
+    text-underline-position: below;
+    flex-direction: column;
+    
+    
     
     
     
@@ -95,11 +176,14 @@
     text-align: center;
     font-family: 'Poppins', sans-serif; 
     
+ 
+    
 }
 
 .newsletter-form button:hover {
-    background-color: #b38456; 
+    background-color: #ffffff; 
     font-family: 'Poppins', sans-serif; 
+    text-decoration: none;
 }
 
 
