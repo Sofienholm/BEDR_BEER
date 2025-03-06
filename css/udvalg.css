@@ -345,3 +345,75 @@ justify-content: center;
 
     
 }
+
+.beer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #e8dccb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004D40;
+    font-style: italic;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.beer-beer-section {
+    position: relative;
+    background-color: #f8a5a5;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beer-image {
+    width: 150px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.background-shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('butterfly.svg'); /* Placeholder for the butterfly design */
+    opacity: 0.5;
+}
+
+.description {
+    font-style: italic;
+    color: #666;
+    margin: 15px 0;
+}
+
+.beer-btn {
+    background-color: #004D40;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.beer-btn:hover {
+    background-color: #00332e;
+}
