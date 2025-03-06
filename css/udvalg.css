@@ -342,87 +342,50 @@ justify-content: center;
     position: relative;
    left: 120px;
    top: 40px;
-
-    
 }
 
 .beer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
     background-color: #e8dccb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
+    height: auto;
     text-align: center;
 }
 
-.title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #114547;
-    font-style: italic;
-    position: relative;
-    bottom: 40px;
-    padding: 12px 24px;
-}
 
-.subtitle {
-    font-size: 2.5rem;
-    font-weight: 600;
-    background: linear-gradient(90deg, #fbb03b, #f8a5a5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    bottom: 60px;
-    font-weight: bold;
-}
 
-.beer-beer-section {
-    position: relative;
-    padding: 50px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: 60%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), inset 0 15px 10px rgba(255, 255, 255, 0.2); /* Tilføjer både drop og inner shadow */
-    bottom: 30px;
-    background: linear-gradient(135deg, #f8a5a5, #fbb03b);
-    animation: bgAnimation 5s infinite alternate ease-in-out;
-}
 
-.beer-image {
-    width: 450px;
-    z-index: 10;
-    height: 450px;
-    position: relative;
-    right: 6%;
-    top: 10%;
-}
 
-.background-shape {
+.image-container {
+    position: relative;
+    width: 100%; /* Justér efter behov */
+    height: auto;
+  }
+  
+  .baggrund {
+width: 100%;
+height: auto;
+    z-index: 0;
+ 
+  }
+  
+  .ol {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    opacity: 0.5;
-}
-
-.beer-btn {
-    background-color: #114547;
-    color: white;
-    padding: 15px 20px;
-    font-size: 1.8rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-    position: relative;
-}
-
-.beer-btn:hover {
-    background-color: #00332e;
-}
+    top: 10%;
+    left: 45%; /* Flyt billedet til siden */
+    width: 200px;
+  }
+  .vinger {
+    position: absolute;
+   top: 10%;
+    left: 29.5%; /* Flyt billedet til siden */
+    width: 40rem;
+    animation: flap 0.5s infinite ease-in-out alternate;
+  }
+    @keyframes flap {
+        0% { transform: rotate(0deg) translateY(0) scale(1); }
+        100% { transform: rotate(-2deg) translateY(-5px) scale(1.05); }
+       
+    }
+  .ol:hover {
+    transform: scale(1.1); /* Gør billedet lidt større ved hover */
+  transition: 0.5s;
+  }

@@ -20,8 +20,3 @@ document.querySelectorAll('.icon').forEach(icon => {
     icon.addEventListener('mouseleave', () => popup.style.opacity = '0');
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".beer-btn").addEventListener("click", function () {
-        alert("Du bliver nu ført til månedens øl!");
-    });
-});
