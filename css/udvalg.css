@@ -69,7 +69,7 @@ justify-content: center;
     background-color: #819a71;
 }
 #olfem{
-    background-color: #f9e67b;
+    background-color: #f18548;
 }
 #olseks{
     background-color: #92db85;
@@ -390,10 +390,11 @@ height: auto;
   }
   .vinger {
     position: absolute;
-   top: 10%;
-    left: 29.5%; /* Flyt billedet til siden */
+    top: 10%;
+    left: 28.5%; /* Flyt billedet til siden */
     width: 40rem;
-    animation: flap 0.5s infinite ease-in-out alternate;
+    padding-right: 1.1rem;
+    animation: flap 0.6s infinite ease-in-out alternate;
   }
     @keyframes flap {
         0% { transform: rotate(0deg) translateY(0) scale(1); }
