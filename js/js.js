@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     handleScroll();
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
     console.log("JavaScript kører!"); // Debug-log for at se, om scriptet loader
 
@@ -73,4 +74,24 @@ document.addEventListener("DOMContentLoaded", function() {
             popup.classList.remove("show");
         }
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let sections = document.querySelectorAll(".parallax-section");
+
+    function handleScroll() {
+        sections.forEach(section => {
+            let rect = section.getBoundingClientRect();
+            let isVisible = rect.top < window.innerHeight * 0.8 && rect.bottom > 0;
+
+            if (isVisible) {
+                section.classList.add("in-view"); // Tilføjer klassen, når sektionen er synlig
+            } else {
+                section.classList.remove("in-view"); // Fjerner klassen, når den ikke er
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Kør funktionen ved start, så første sektion animeres
 });
