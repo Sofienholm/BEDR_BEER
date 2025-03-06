@@ -1,35 +1,117 @@
-body {
+
+
+.dropdown-box {
+    position: static;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #E1D4C7;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 20px;
+    transition: max-height 1s ease-out, padding 0.3s ease, opacity 1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    z-index: 1000;
     display: flex;
+    justify-content: space-between; /* Placerer billeder og tekst side om side */
+    height: 630px; /* Sætter højden på kasserne */
+}
+
+
+
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    gap: 20px;
+  width: 100%;
+
+}
+.info1 img{
+    width: 20rem;
+    height: auto;
+    position: absolute;
+    top: 0;
+   
+}
+.info2 img{
+    width: 20rem;
+    height: auto;
+    position: absolute;
+    top: 50;
+   
+}
+.info3 img{
+    width: 20rem;
+    height: auto;
+    position: absolute;
+    top: 70;
+}
+.info4 img{
+    width: 20rem;
+    height: auto;
+    position: absolute;
+    top: 100;
+}
+.dropdown-container {
+    display: inline-flex; /* Sørger for, at teksten og knappen placeres horisontalt */
+    align-items: center; /* Centrerer indholdet vertikalt */
+  
+  
+
+  
+
+}
+
+/* 🎨 Pil roterer, når dropdown åbnes */
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+
+/* 🎨 Når dropdown åbnes */
+.dropdown-box.show {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 🎨 Justering af pilen, når dropdown åbnes */
+.dropdown-btn.open .arrow {
+    transform: rotate(180deg); /* Roter pilen */
+}
+.info-box p {
+    font-size: 24px; /* Juster skriftstørrelsen */
+    font-weight: bold; /* Fed skrift */
+    font-style: italic; /* Skrå skrift */
+    color: #6a1b1d; /* Mørk rød farve */
+    text-align: center; /* Centrer tekst */
+    margin-bottom: 20px; /* Afstand mellem afsnit */
+}
+
+/* 🎨 Dropdown-knap som en cirkel med sort pil */
+.dropdown-btn {
+    background-color: transparent;  /* Gør baggrunden gennemsigtig */
+    color: black;                   /* Sætter tekstfarven til sort */
+    padding: 10px 20px;             /* Tilføjer ekstra plads til teksten */
+    border: 2px solid black;        /* Tilføjer en sort kant rundt om cirklen */
+    border-radius: 50%;             /* Gør knappen til en cirkel */
+    cursor: pointer;
+    font-size: 24px;                /* Størrelse på pilen */
+    display: flex;           /* Sørger for tekst og pil er ved siden af hinanden */
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
-.icon-container {
-    display: flex;
-    gap: 20px;
-}
-.icon {
     position: relative;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-}
-.icon img {
-    width: 100%;
-    height: auto;
-}
-.popup {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 50px;
+    width: 50px;
 }
