@@ -25,22 +25,24 @@ html, body{
 
 .cta-container {
     position: relative; /* Sørger for, at .cta-button forbliver fast */
-    bottom: 180px;
-    margin-left: 195px;
+    bottom: 140px;
+    margin-left: 145px;
 }
 
 .cta-button {
     background-color: #403836; /* Baggrund */
-    color: #E1D4C7; /* Tekst farve */
+    color: #f9e582; /* Tekst farve */
     padding: 15px 30px; /* Indvendig afstand */
     text-decoration: none; /* Fjerner understregning på linket */
     border-radius: 5px; /* Runde hjørner */
     transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 800, 'wdth' 80, 'slnt' -12;
     z-index: 5;
 }
 
 .cta-button:hover {
-    background-color: #fbaa1b; /* Ændrer baggrundsfarven ved hover */
+    background-color: #eb6a47; /* Ændrer baggrundsfarven ved hover */
     transform: scale(1.05); /* Gør knappen lidt større, når man holder musen over den */
 }
 
@@ -49,7 +51,7 @@ html, body{
     flex: 1; /* Begge kasser fylder lige meget */
     height: 630px; /* Sætter højden på kasserne */
     margin-top: -30px;
-justify-content: center;
+    justify-content: center;
     align-items: flex-start;
     position: relative;
     gap: 50px;
@@ -132,7 +134,6 @@ justify-content: center;
     color: #403836; /* Farve på overskriften */
     text-align: left;
     margin-left: 120px;
-    margin-top: 60px;
 }
 .olbillede img{
     max-width: 19rem; /* Sikrer at billedet fylder hele bredden af boksen */
@@ -373,27 +374,27 @@ height: auto;
     position: relative;
     width: 100%; /* Justér efter behov */
     height: auto;
+    
   }
   
   .baggrund {
 width: 100%;
 height: auto;
     z-index: 0;
- 
   }
   
   .ol {
     position: absolute;
     top: 10%;
     left: 45%; /* Flyt billedet til siden */
-    width: 200px;
+    width: 180px;
   }
   .vinger {
     position: absolute;
     top: 10%;
     left: 28.5%; /* Flyt billedet til siden */
-    width: 40rem;
-    padding-right: 1.1rem;
+    width: 35rem;
+    padding-left: 2.3rem;
     animation: flap 0.6s infinite ease-in-out alternate;
   }
     @keyframes flap {
