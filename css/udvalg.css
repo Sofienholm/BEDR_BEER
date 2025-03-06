@@ -355,63 +355,72 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     text-align: center;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    color: #004D40;
+    color: #114547;
     font-style: italic;
+    position: relative;
+    bottom: 40px;
+    padding: 12px 24px;
 }
 
 .subtitle {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
+    background: linear-gradient(90deg, #fbb03b, #f8a5a5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    bottom: 60px;
+    font-weight: bold;
 }
 
 .beer-beer-section {
     position: relative;
-    background-color: #f8a5a5;
     padding: 50px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 60%;
+    height: 60%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), inset 0 15px 10px rgba(255, 255, 255, 0.2); /* Tilføjer både drop og inner shadow */
+    bottom: 30px;
+    background: linear-gradient(135deg, #f8a5a5, #fbb03b);
+    animation: bgAnimation 5s infinite alternate ease-in-out;
 }
 
 .beer-image {
-    width: 150px;
+    width: 450px;
     z-index: 10;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: 450px;
+    position: relative;
+    right: 6%;
+    top: 10%;
 }
 
 .background-shape {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: url('butterfly.svg'); /* Placeholder for the butterfly design */
     opacity: 0.5;
 }
 
-.description {
-    font-style: italic;
-    color: #666;
-    margin: 15px 0;
-}
-
 .beer-btn {
-    background-color: #004D40;
+    background-color: #114547;
     color: white;
-    padding: 12px 24px;
-    font-size: 1.2rem;
+    padding: 15px 20px;
+    font-size: 1.8rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
+    position: relative;
 }
 
 .beer-btn:hover {
