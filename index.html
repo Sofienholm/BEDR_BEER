@@ -22,14 +22,14 @@
 
     <nav class="navbar">
         <ul>
-          <li><a href="#">Bryggeriet</a>
+          <li><a href="#">BRYGGERIET</a>
             <ul>
                 <li><a href="#">Om BEDR BEER</a></li>
                 <li><a href="#">Events</a> </li>
             </ul>
           </li>
 
-            <li><a href="#">Udvalg</a>
+            <li><a href="#">UDVALG</a>
                 <ul>
                     <li><a href="udvalg.html">Øl</a></li>
                     <li><a href="#">Andmeldelser</a> </li>
@@ -40,7 +40,7 @@
                 <img src="images/logo5.png" alt="logo">
               </li>
 
-            <li><a href="#">Kampange</a></li>
+            <li><a href="#">KAMPANGE</a></li>
             
          
             <li class="search-box">
@@ -57,6 +57,9 @@
 </header>
 
   <main>
+<div class="intrologo">
+  <img src="images/logoooo5.png" alt="logotekst">
+</div>
 <div class="introbillede">
   <img src="images/hænder.svg" alt="hænder som skåler">
 
@@ -64,10 +67,13 @@
 
 <article class="forstetreøl">
   <div>
-<img src="images/stock.svg" alt="">
+<img src="images/førsteøller.png" alt="">
   </div>
-  <div>
-<img id="slogan" src="images/slogan.png" alt="">
+  <div class="slogan">
+  <h4>BEDR SMAG AF IPA!</h4>
+  <h5>BEDR SAMVÆRD</h5>
+  <h6>BEDR SAMVITTIGHED</h6>
+</div>
   </div>
 
 </article>
@@ -103,7 +109,7 @@ Så bliv fuld på fællesksab med BEDR BEER!
 
   <div class="parallax-container">
     <section class="parallax-section s1">
-        <div class="bg"></div>
+        <div></div>
         <h1>GUILTY PASSION</h1>
         <model-viewer 
             class="beer-can" 
@@ -144,6 +150,36 @@ Så bliv fuld på fællesksab med BEDR BEER!
     </section>
   </div>
   
+  <section class="newsletter-container">
+    <div class="newsletter-form">
+        <h2>Nyhedsbrev</h2>
+        <p>Modtag eksklusive rabatter, nyheder & smagstests direkte i din indbakke</p> 
+        <form id="newsletter-form">
+            <input type="text" id="name" placeholder="Skriv dit navn" required>
+            <input type="email" id="email" placeholder="Indtast din email" required>
+            <button type="submit">TILMELD DIG</button>
+        </form>
+    </div>
+</section>
+
+<!-- Popup bekræftelse -->
+<div id="confirmation-popup" class="popup-container">
+  <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h2>Tak for din tilmelding!</h2>
+      <p>Du er nu tilmeldt vores nyhedsbrev.</p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      let name = localStorage.getItem("subscriberName");
+      if (name) {
+          document.querySelector("h1").textContent = `Tak for din tilmelding, ${name}!`;
+          localStorage.removeItem("subscriberName"); // Rydder navn efter brug
+      }
+  });
+</script>
 
 
   </main>
@@ -153,7 +189,7 @@ Så bliv fuld på fællesksab med BEDR BEER!
         <div class="footer-columns">
             <div class="footer-column">
                 <p><a>Kontakt os</a></p>
-                <p><a>Om Zero Buzz Brew</a></p>
+                <p><a>Om BEDR BEER</a></p>
                 <p><a>Levering & pakkeshop</a></p>
             </div>
             <div class="footer-column">
@@ -172,6 +208,7 @@ Så bliv fuld på fællesksab med BEDR BEER!
 </footer>
   <script src="js/js.js"></script>
   <script src="js/header.js"></script>
+
  
 </body>
 </html>

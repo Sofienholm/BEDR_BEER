@@ -1,10 +1,3 @@
-function toggleDropdown() {
-    let box = document.getElementById("beerBox");
-    let button = document.querySelector(".dropdown-btn");
-
-    box.classList.toggle("show");
-    button.classList.toggle("open");
-}
 document.querySelectorAll('.icon').forEach(icon => {
     const img = document.createElement('img');
     img.src = icon.getAttribute('data-img');

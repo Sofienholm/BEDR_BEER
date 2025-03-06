@@ -33,14 +33,16 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-weight: 850;
+    font-style: italic;
+    font-size: 18px;
     padding: 18px;
-    color: #333;
+    color: #3e3735;
     display: block;
 }
 
 header .navbar ul li a:hover {
-    background: #333;
+    background: #3e3735;
     color: #fff;
 }
 
@@ -129,6 +131,7 @@ footer {
         color: #dfd3c6;
         padding: 24px;
     }
+    
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;

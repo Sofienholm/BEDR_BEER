@@ -24,13 +24,22 @@
  .introbillede{
  justify-self: center;
  z-index: 0;
- margin-bottom: -2.1rem;
- margin-top: -1.5rem;
+ margin-bottom: -0.44rem;
+ margin-top: 0rem;
  
  }
+ .intrologo img{
+  max-height: 30rem;
+  width: 30rem;
+ }
+ .intrologo{
+  margin-bottom: -20rem;
+  margin-left: 20rem;
+ }
+
  .introbillede img{
   width: 40rem;
-  height: 30rem;
+  height: 25rem;
  }
 
  .forstetreøl img{
@@ -39,7 +48,7 @@
   padding: 5rem 0 5rem 0;
  
  }
- #slogan{
+ .slogan{
   width: 30rem;
   height: auto;
  }
@@ -49,16 +58,53 @@
     align-items: center;
     z-index: 1;
     margin: 0 auto;
-    gap: 8rem;
+    gap: 5rem;
     background-color:#f9e67b;
     box-shadow:1px -6px 53px -11px #a89947;
   }
+
+  .forstetreøl img{
+    width: 40rem;
+    margin-left: -4rem;
+  }
+
+  h1{
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
+    font-size: 6rem;
+    color: #403836;
+    rotate: 305deg;
+}
+
 
   h3{
       font-family: "acumin-variable", sans-serif;
       font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
       font-size: 4rem;
       color: #b5db84;
+  }
+
+  h4{
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 900, 'wdth' 60, 'slnt' -12;
+    font-size: 4.5rem;
+    color: #403836;
+  }
+  h5{
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 900, 'wdth' 60, 'slnt' -12;
+    font-size: 3.5rem;
+    margin-top: -1rem;
+    margin-left: -6rem;
+    color: #403836;
+  }
+  h6{
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 900, 'wdth' 60, 'slnt' -12;
+    font-size: 2rem;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    color: #403836;
   }
 
   p{
@@ -96,7 +142,7 @@
 }
 
 .cta-button:hover {
-    background-color: #fbaa1b; /* Ændrer baggrundsfarven ved hover */
+    background-color: #eb6a47; /* Ændrer baggrundsfarven ved hover */
     transform: scale(1.05); /* Gør knappen lidt større, når man holder musen over den */
 }
 
@@ -146,11 +192,144 @@ model-viewer {
   width: 250px;
   height: 500px;
   opacity: 0;
+  rotate: 35deg;
   transform: translateY(50px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+.newsletter-container {
+  background-color: #403836; /* Baggrundsfarve */
+  border-radius: 600px 600px 0 0 ; /* Halv cirkel nederst */
+  padding: 20px 20px; /* Reduktion af padding for bedre visning */
+  width: 80%; /* Fyld hele bredden af forælderen */
+  max-width: 800px; /* Maksimal bredde */
+  text-align: center; /* Centrerer indholdet */
+  margin: 10px auto; /* Centrerer containeren på siden */
 
+  padding-left: 270px;
+  font-family: 'Poppins', sans-serif; 
+  margin-top: 125px;
+  margin-bottom: 0px;
+}
+
+.newsletter-form h2 {
+  font-size: 2rem;
+  color: #E1D4C7;
+  padding-right: 260px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;   
+}
+
+.newsletter-form p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: #E1D4C7; 
+  padding-right: 260px;
+  font-family: 'Poppins', sans-serif;
+} 
+
+/*navn knap*/
+.newsletter-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #E1D4C7;
+  text-decoration: none;
+  text-align: center;
+ font-family: 'Poppins', sans-serif;  
+}
+/*email knap*/
+.newsletter-form input {
+  padding: 5px;
+  font-size: 100%;
+  border-radius: 10px;
+  width: 50%;
+  background-color: #E1D4C7;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; 
+  height: 50px;
+  text-underline-position: below;
+}
+/*tilmeld knap*/
+.newsletter-form button {
+  background-color: #E1D4C7;
+  padding: 12px;
+  color: #3e3735;
+  font-size: 1.0rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700;
+  
+}
+
+.newsletter-form button:hover {
+  background-color: #eb6a47; 
+  color: #f9e67b;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700;
+}
+
+/* Sikrer, at popup er skjult som standard */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Sikrer at den er øverst */
+}
+
+/* Popup indhold */
+.popup-content {
+  background: #403836;
+  color: #E1D4C7;
+  padding: 80px;
+  border-radius: 30px;
+  text-align: center;
+  width: 150%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  height: 20%;
+  border: 2px solid #f9e67b; /* Tykkelse, type og farve */
+  padding: 25px; /* Afstand inden i boksen */
+}
+
+
+/* Luk-knap */
+.close-popup {
+ position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Når popup'en er aktiv */
+.popup-container.show {
+  display: flex !important;
+}
+
+/* Effekt når popup aktiveres */
+.popup-content {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.popup-container.show .popup-content {
+  transform: scale(1);
+  opacity: 1;
+}
 
 
 
@@ -162,3 +341,5 @@ model-viewer {
 .s2 { background-image: url(../images/baggrund2.png);} /* Grøn */
 .s3 { background-image: url(../images/baggrund3.png);} /* Blå */
 /* Baggrundsdiv (ny styling) */
+
+
