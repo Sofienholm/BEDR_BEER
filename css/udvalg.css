@@ -187,8 +187,25 @@ justify-content: center;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    width: 45%; /* Giver plads til tekstboksen */
-    position: relative;
+
+}
+.info1 img{
+    width: 10px;
+    height: auto;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    transform: rotate(0deg) translateY(-50px);
+    position: absolute;
+   
+}
+.info2 img{
+    width: 100px;
+}
+.info3 img{
+    
+}
+.info4 img{
+    
 }
 
 /* 🎨 Skråt ned billeder */
@@ -197,6 +214,8 @@ justify-content: center;
     transition: transform 0.3s ease;
     transform-origin: center center;
     gap: 20px;
+    width: 100px;
+height: auto;
 }
 
 /* 🎨 Justering af billeder */
@@ -238,12 +257,8 @@ justify-content: center;
 }
 
 /* 🎨 Højre boks med tekst */
-.text-box {
-    max-width: 800px;
-    line-height: 1.5;
-    padding: 20px;
-}
-.text-box p {
+
+.info-box p {
     font-size: 24px; /* Juster skriftstørrelsen */
     font-weight: bold; /* Fed skrift */
     font-style: italic; /* Skrå skrift */
