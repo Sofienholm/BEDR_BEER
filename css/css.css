@@ -13,7 +13,9 @@
  main {
    background-color: var(--backgr);
  }
-
+ model-viewer::part(default-progress-bar) {
+  display: none;
+}
  body{
   font-family: 'Poppins', sans-serif; /* Standard font */
   background-color: var(--backgr);
@@ -165,6 +167,7 @@
 .parallax-section {
   height: 100vh;
   display: flex;
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -173,19 +176,10 @@
   color: white;
   position: relative;
   overflow: hidden;
+  padding-right: 8rem;
 }
 
-/* Baggrundsbillede med parallax-effekt */
-.bg {
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background-size: cover;
-  background-position: center;
-  transform: translateY(20%); /* Start lavere for parallax-effekt */
-  transition: transform 0.3s ease-out;
-  
-}
+
 
 /* Model-viewer (3D dåser) */
 model-viewer {
@@ -334,12 +328,52 @@ model-viewer {
 
 
 /* Baggrundsfarver for test */
-.s1 { 
-  background-image: url(../images/baggrund1.png)
 
-} /* Rød-orange */
-.s2 { background-image: url(../images/baggrund2.png);} /* Grøn */
-.s3 { background-image: url(../images/baggrund3.png);} /* Blå */
-/* Baggrundsdiv (ny styling) */
+.blur-bg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/baggrund1.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); /* Gør baggrunden sløret */
+  z-index: 0; /* Sørger for, at den er bagved alt andet */
+}
+.blur-bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/baggrund2.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); /* Gør baggrunden sløret */
+  z-index: 0; /* Sørger for, at den er bagved alt andet */
+}
+.blur-bg3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/baggrund3.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); /* Gør baggrunden sløret */
+  z-index: 0; /* Sørger for, at den er bagved alt andet */
+}
 
+.parallax-section h1 {
+  opacity: 0; /* Starter usynlig */
+  transform: translateY(30px); /* Starter lidt nede */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
+/* Når sektionen er synlig */
+.parallax-section.in-view h1 {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -108,39 +108,48 @@ Så bliv fuld på fællesksab med BEDR BEER!
 
 
   <div class="parallax-container">
-    <section class="parallax-section s1">
-        <div></div>
+    <section class="parallax-section s1" id="section1">
+      <div class="blur-bg1"></div> 
         <h1>GUILTY PASSION</h1>
         <model-viewer 
         class="beer-can" 
         src="models/passssiiiooonnn.glb" 
         alt="3D Øldåse"
         auto-rotate
-        camera-controls>
+        camera-controls
+        camera-orbit="20deg 90deg 2m"
+        disable-zoom>
         </model-viewer>
     </section>
   
-    <section class="parallax-section s2">
-        <div class="bg"></div>
-        <h1>LUSTY RAZZ</h1>
+    <section class="parallax-section s2" id="section2">
+   
+      <div class="blur-bg2"></div> 
+          <h1>LUSTY RAZZ</h1>
+
+        
         <model-viewer 
             class="beer-can" 
             src="models/hindbærrrrrrr.glb" 
             alt="3D Øldåse"
-            auto-rotate
-            camera-controls>
+            camera-orbit="30deg 90deg 2m"
+            camera-controls
+          
+            disable-zoom>
         </model-viewer>
     </section>
   
-    <section class="parallax-section s3">
-        <div class="bg"></div>
+    <section class="parallax-section s3" id="section3">
+      <div class="blur-bg3"></div> 
         <h1>ZESTY CITRUS</h1>
         <model-viewer 
             class="beer-can" 
             src="models/citrooooonnn.glb" 
             alt="3D Øldåse"
             auto-rotate
-            camera-controls>
+            camera-controls
+            camera-orbit="30deg 90deg 2m"
+            disable-zoom>
         </model-viewer>
     </section>
   </div>
