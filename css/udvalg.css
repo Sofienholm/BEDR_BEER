@@ -14,6 +14,8 @@ html, body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
    }
 
    .nyhed {
@@ -153,7 +155,7 @@ html, body{
 .dropdown-container {
     display: inline-flex; /* Sørger for, at teksten og knappen placeres horisontalt */
     align-items: center; /* Centrerer indholdet vertikalt */
-  
+  gap: 1rem;
   
 
    
@@ -338,6 +340,7 @@ html, body{
 .icon-container {
     display: flex;
     gap: 10px;
+    margin-bottom: 1rem;
 }
 .icon {
 
@@ -408,7 +411,7 @@ height: auto;
   .vinger {
     position: absolute;
     top: 10%;
-    left: 28.5%; /* Flyt billedet til siden */
+    left: 30.01%; /* Flyt billedet til siden */
     width: 35rem;
     padding-left: 2.3rem;
     animation: flap 0.6s infinite ease-in-out alternate;
