@@ -18,6 +18,7 @@ html, body{
     overflow-x: hidden;
    }
 
+   /* Billede */
    .nyhed {
     width: 100%;       /* Ændrer bredden af billedet */
     height: auto;       /* Bevarer billedets proportioner */
@@ -25,6 +26,7 @@ html, body{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
+/* call to action knap */
 .cta-container {
     position: relative; /* Sørger for, at .cta-button forbliver fast */
     bottom: 140px;
@@ -48,6 +50,7 @@ html, body{
     transform: scale(1.05); /* Gør knappen lidt større, når man holder musen over den */
 }
 
+/* styrer opdelte bokse med farver og indhold */
 .container-box {
     display: flex; /* Brug flexbox til at arrangere elementerne */
     flex: 1; /* Begge kasser fylder lige meget */
@@ -60,6 +63,8 @@ html, body{
     padding: 70px;
     
 }
+
+/* id baggrundsfarve til de forskellige opdelinger */
 #olet{
     background-color: #f9e67b;
 }
@@ -84,6 +89,7 @@ html, body{
     
 }
 
+/* indhold af kasse til venstre */
 .box-left {
     display: flex;
     justify-items: center;
@@ -97,12 +103,12 @@ html, body{
     margin: 0 auto;
     
 }
+
+/* indhold af kasse til højre */
 .box-right {
- 
     display: flex; 
     flex-direction: column; /* Arrangerer indholdet i en kolonne */
     align-items: flex-start;
-   
 }
 
 .box-right h2 {
@@ -110,7 +116,6 @@ html, body{
     color: #403836; /* Farve på overskriften */
     text-align: left;
     margin-left: 120px;
-   
 }
 .box-right p {
     font-size: 27px; /* Størrelse på teksten */
@@ -156,9 +161,6 @@ html, body{
     display: inline-flex; /* Sørger for, at teksten og knappen placeres horisontalt */
     align-items: center; /* Centrerer indholdet vertikalt */
   gap: 1rem;
-  
-
-   
 }
 
 /* 🎨 Pil roterer, når dropdown åbnes */
@@ -182,8 +184,6 @@ html, body{
     align-items: center;
     width: 100%;
 }
-
-
 
 /* 🎨 Dropdown-knap som en cirkel med sort pil */
 .dropdown-btn {
@@ -222,20 +222,17 @@ html, body{
     height: 730px; /* Sætter højden på kasserne */
 }
 
-
-
 /* 🎨 Justering af pilen, når dropdown åbnes */
 .dropdown-btn.open .arrow {
     transform: rotate(180deg); /* Roter pilen */
 }
 
+/* dropdown boks med indhold */
 .info-box {
     position: relative;
     width: 100%;
     height: 120vh;
     left: 5%;
-
-   
 }
 
 .info-item {
@@ -246,9 +243,7 @@ html, body{
 
 .info-item:hover {
     transform: scale(1.05);
-    
 }
-
 
 .info-item img {
     width: 100%;
@@ -266,7 +261,6 @@ html, body{
     color: #b22222;
     pointer-events: none;
     transform: rotate(-45deg);
-
 }
 
 .info-item:hover p {
@@ -302,7 +296,6 @@ html, body{
 #info4 { top: 35%; left: 70%; }
 
 /* Skrå tekster rotationsgrad */
-
 #info1 p { 
     transform: rotate(-51deg) ; 
     top: 85%; 
@@ -327,7 +320,6 @@ html, body{
     
 }
 
-
 #info4 p { 
     transform: rotate(-51deg); 
     top: 90%; 
@@ -336,14 +328,13 @@ html, body{
  }
 
 
-
+/* ikoner */
 .icon-container {
     display: flex;
     gap: 10px;
     margin-bottom: 1rem;
 }
 .icon {
-
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -356,9 +347,9 @@ html, body{
    background-color: #fbaa1b;
     border-radius: 50%;
 }
-.popup {
 
- 
+/* pop up effekt af ikoner */
+.popup {
     transform: translateX(-50%);
     transform: translateY(-300%);
     background-color: rgba(0, 0, 0, 0.8);
@@ -371,7 +362,6 @@ html, body{
     transition: opacity 0.3s ease-in-out;
     width: 6rem;
     text-align: center;
-    
 }
 .ikonn{
     position: relative;
@@ -386,9 +376,7 @@ html, body{
 }
 
 
-
-
-
+/* container af flaske billede */
 .image-container {
     position: relative;
     width: 100%; /* Justér efter behov */
@@ -396,18 +384,21 @@ html, body{
     
   }
   
+  /* styling af baggrund */
   .baggrund {
 width: 100%;
 height: auto;
     z-index: 0;
   }
   
+  /* styling af flaskebillede */
   .ol {
     position: absolute;
     top: 10%;
     left: 45%; /* Flyt billedet til siden */
     width: 180px;
   }
+  /* styling af vingebillede */
   .vinger {
     position: absolute;
     top: 10%;
@@ -416,10 +407,10 @@ height: auto;
     padding-left: 2.3rem;
     animation: flap 0.6s infinite ease-in-out alternate;
   }
+  /* funktion af vingebevægelse */
     @keyframes flap {
         0% { transform: rotate(0deg) translateY(0) scale(1); }
         100% { transform: rotate(-2deg) translateY(-5px) scale(1.05); }
-       
     }
   .ol:hover {
     transform: scale(1.1); /* Gør billedet lidt større ved hover */
