@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/udvalg.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kal3def.css">
+  <link rel="stylesheet" href="css/udvalg.css">
     <link rel="stylesheet" href="css/samlet.css">
     <link rel="icon" type="image/png" href="images/logo5.png">
 
@@ -20,25 +21,25 @@
     
         <nav class="navbar"> <!-- navigationsmenu -->
             <ul>
-              <li><a href="#">Bryggeriet</a>
+              <li><a href="#">BRYGGERIET</a>
                 <ul>
                     <li><a href="#">Om BEDR BEER</a></li>
                     <li><a href="#">Events</a> </li>
                 </ul>
               </li>
     
-                <li><a href="#">Udvalg</a>
+                <li><a href="#">UDVALG</a>
                     <ul>
                         <li><a href="udvalg.html">Øl</a></li>
                         <li><a href="#">Andmeldelser</a> </li>
                     </ul>
                   </li>
     
-                  <li href="index.html" class="logo">
+                  <a href="index.html" class="logo">
                     <img src="images/logo5.png" alt="logo">
-                  </li>
+                  </a>
     
-                <li><a href="#">Kampange</a></li>
+                <li><a href="#">KAMPANGE</a></li>
                 
                   <!-- søgefunktion -->
                 <li class="search-box">
@@ -99,21 +100,34 @@
   
           <!-- dropdown indhold -->
       <div class="dropdown-box" id="beerBox">
-          <div class="content-wrapper">
+          
               <!-- Infografik -->
               <div class="info-box">
-                <img src="images/dåse1.png" alt="Infographic 1" class="infographic-image">
-                <img src="images/dåse2.png" alt="Infographic 2" class="infographic-image">
-                <img src="images/dåse3.png" alt="Infographic 3" class="infographic-image">
-                <img src="images/dåse4.png" alt="Infographic 4" class="infographic-image">
+
+                <div class="info-item" id="info1">
+                    <p>Fremstillet med 0.0% alkohol gennem en skånsom proces, der fjerner alkoholen, mens de naturlige smagsnoter bevares, og giver en ren og velsmagende smagsoplevelse.</p>
+                    <img src="images/dåse1.png" alt="Infographic 1">
+                    
+                </div>
+            
+                <div class="info-item" id="info2">
+                    <img src="images/dåse2.png" alt="Infographic 2">
+                    <p>En kraftig, bitter humle smag med grønne og florale undertoner, der giver øllen en markant karakter og dybde.</p>
+                </div>
+            
+                <div class="info-item" id="info3">
+                    <img src="images/dåse3.png" alt="Infographic 3">
+                    <p>Sød og saftig smag af tropisk mango med fyldige noter af honning og citrus, der skaber en forfriskende og frugtagtig kompleksitet.</p>
+                </div>
+            
+                <div class="info-item" id="info4">
+                    <img src="images/dåse4.png" alt="Infographic 4">
+                    <p>En tropisk smag af passionsfrugt med en perfekt balance af sødme og syrlighed, der tilføjer en frisk og eksotisk note</p>
+                </div>
+            
             </div>
   
-              <!-- Information om øllen -->
-              <div class="text-box">
-                <p>Lusty Razz er en forfriskende og livlig grape sour, der balancerer en perlende syrlighed med en subtil bitter kant fra rød grapefrugt.</p>
-                <p>De friske citrusnoter giver en let og sprød smagsoplevelse, mens den blide bitterhed tilfører dybde uden at overdøve den frugtige friskhed.</p>
-                <p>En harmonisk og letdrikkelig alkoholfri øl, der vækker sanserne med sin frugtige og syrlige karakter.</p>
-            </div>
+        
           </div>
       </div>
 
@@ -141,7 +155,7 @@
                       <!-- dropdown funktion -->
                       <div class="dropdown-container">
                         <span class="dropdown-text">SE INDHOLD</span>
-                       <button class="dropdown-btn" onclick="toggleDropdown()">
+                       <button class="dropdown-btn">
                         <span class="arrow">▲</span>
                       </button>
                       </div>
@@ -159,10 +173,10 @@
                     <img src="images/ølbilleder-16.png" alt="">
                        </div>
                   <div class="tekst">
-                    <h2>Zesty Citrus</h2>
-                    <p>Zesty Citrus er en forfriskende <br>
-                       øl med syrlige og friske citrusnoter, der <br>
-                        giver en livlig og sprød smagsoplevelse.  <br>
+                    <h2>ZESTY CITRUS</h2>
+                    <p>En forfriskende øl med syrlige og<br>
+                       friske citrusnoter, der giver en<br>
+                      livlig og sprød smagsoplevelse.  <br>
                        Perfekt til varme dage eller  <br>
                        som et frisk alternativ. </p>
                         <!-- ikoner -->
@@ -178,7 +192,7 @@
                           <!-- dropdown funktion -->
                           <div class="dropdown-container">
                             <span class="dropdown-text">SE INDHOLD</span>
-                           <button class="dropdown-btn" onclick="toggleDropdown()">
+                           <button class="dropdown-btn">
                             <span class="arrow">▲</span>
                           </button>
                           </div>
@@ -192,7 +206,7 @@
                  
                   <div class="image-container">
                     <img src="images/månedensøl-21vinger.png" class="vinger">
-                    <a href="#">
+                    <a href="#olfem">
                     <img src="images/månedensøl-22.png" class="ol">
                   </a>
                     <img src="images/månedensøl-23bg.png" class="baggrund">
@@ -202,12 +216,12 @@
                 <!-- container boks øl fire -->
                  <div class="container-box" id="olfire">
                   <div class="tekst">
-                      <h2><b>Frisky Pilsner </b></h2>
-                      <p>Frisky Pilsner er en lys <br>
-                         og forfriskende øl med en ren, <br>
-                          sprød smag og en let humlebitterness, <br>
-                           der giver en klassisk pilsneroplevelse. <br>
-                            Perfekt til enhver anledning.
+                      <h2><b>FRISKY PILSNER </b></h2>
+                      <p>En lys og forfriskende øl <br>
+                         med en ren, prød smag og en<br>
+                        let humlebitterness, der giver <br>
+                        en klassisk pilsneroplevelse. <br>
+                        Perfekt til enhver anledning.
                       </p>
                       <!-- ikoner -->
                           <div class="ikonn">
@@ -221,7 +235,7 @@
                             <!-- dropdown funktion -->
                           <div class="dropdown-container">
                             <span class="dropdown-text">SE INDHOLD</span>
-                           <button class="dropdown-btn" onclick="toggleDropdown()">
+                           <button class="dropdown-btn">
                             <span class="arrow">▲</span>
                           </button>
                           </div>
@@ -239,13 +253,12 @@
                         <img src="images/ølbilleder-15.png" alt="">
                            </div>
                       <div class="tekst">
-                        <h2><b>Hasty IPA </b></h2>
-                        <p>Hasty IPA er en sprudlende <br>
-                           øl med en skarp syrlighed <br>
-                            og en bitter, frugtig smag  <br>
-                             af citrus og tropiske noter. <br>
-                              En intens og forfriskende <br>
-                               IPA, der vækker sanserne.
+                        <h2><b>HASTY IPA </b></h2>
+                        <p>En sprudlende øl med en skarp <br>
+                         syrlighed og en bitter, frugtig <br>
+                        smag af citrus og tropiske noter.<br>
+                        En intens og forfriskende IPA, <br>
+                        der vækker sanserne. <br>
                         </p>
                         <!-- ikoner -->
                             <div class="ikonn">
@@ -259,7 +272,7 @@
                               <!-- dropdown funktion -->
                               <div class="dropdown-container">
                                 <span class="dropdown-text">SE INDHOLD</span>
-                               <button class="dropdown-btn" onclick="toggleDropdown()">
+                               <button class="dropdown-btn" >
                                 <span class="arrow">▲</span>
                               </button>
                               </div>
@@ -272,10 +285,9 @@
                      <!-- container boks øl seks -->
                      <div class="container-box" id="olseks">
                       <div class="tekst">
-                        <h2>Wealthy Classic</h2>
-                        <p>Wealthy Classic er en fyldig <br>
-                           og velbalanceret øl med en <br>
-                            rig maltprofil og en rund, <br>
+                        <h2>WEALTHY CLASSIC</h2>
+                        <p>En fyldig og velbalanceret øl <br>
+                           med en rig maltprofil og en rund,<br>
                              harmonisk smag. En klassisk <br>
                               og tilfredsstillende oplevelse, <br>
                                der passer til enhver smag.
@@ -292,7 +304,7 @@
                               <!-- dropdown funktion -->
                               <div class="dropdown-container">
                                 <span class="dropdown-text">SE INDHOLD</span>
-                               <button class="dropdown-btn" onclick="toggleDropdown()">
+                               <button class="dropdown-btn" >
                                 <span class="arrow">▲</span>
                               </button>
                               </div>

@@ -1,5 +1,5 @@
 * {
-    /* Generel reset eller styling */
+
 }
 h1{
     font-family: "acumin-variable", sans-serif;
@@ -14,9 +14,10 @@ html, body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
    }
 
-   /* Billede */
    .nyhed {
     width: 100%;       /* Ændrer bredden af billedet */
     height: auto;       /* Bevarer billedets proportioner */
@@ -24,29 +25,29 @@ html, body{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* call to action knap */
 .cta-container {
     position: relative; /* Sørger for, at .cta-button forbliver fast */
-    bottom: 180px;
-    margin-left: 195px;
+    bottom: 140px;
+    margin-left: 145px;
 }
 
 .cta-button {
     background-color: #403836; /* Baggrund */
-    color: #E1D4C7; /* Tekst farve */
+    color: #f9e582; /* Tekst farve */
     padding: 15px 30px; /* Indvendig afstand */
     text-decoration: none; /* Fjerner understregning på linket */
     border-radius: 5px; /* Runde hjørner */
     transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: 'wght' 800, 'wdth' 80, 'slnt' -12;
     z-index: 5;
 }
 
 .cta-button:hover {
-    background-color: #fbaa1b; /* Ændrer baggrundsfarven ved hover */
+    background-color: #eb6a47; /* Ændrer baggrundsfarven ved hover */
     transform: scale(1.05); /* Gør knappen lidt større, når man holder musen over den */
 }
 
-/* styrer opdelte bokse med farver og indhold */
 .container-box {
     display: flex; /* Brug flexbox til at arrangere elementerne */
     flex: 1; /* Begge kasser fylder lige meget */
@@ -72,7 +73,7 @@ html, body{
     background-color: #819a71;
 }
 #olfem{
-    background-color: #f9e67b;
+    background-color: #f18548;
 }
 #olseks{
     background-color: #92db85;
@@ -83,7 +84,6 @@ html, body{
     
 }
 
-/* indhold af kasse til venstre */
 .box-left {
     display: flex;
     justify-items: center;
@@ -97,8 +97,6 @@ html, body{
     margin: 0 auto;
     
 }
-
-/* indhold af kasse til højre */
 .box-right {
  
     display: flex; 
@@ -138,7 +136,6 @@ html, body{
     color: #403836; /* Farve på overskriften */
     text-align: left;
     margin-left: 120px;
-    margin-top: 60px;
 }
 .olbillede img{
     max-width: 19rem; /* Sikrer at billedet fylder hele bredden af boksen */
@@ -151,15 +148,17 @@ html, body{
 }
 
 
+
+
+
 /* 🎨 Dropdown-containeren */
 .dropdown-container {
     display: inline-flex; /* Sørger for, at teksten og knappen placeres horisontalt */
     align-items: center; /* Centrerer indholdet vertikalt */
-  
+  gap: 1rem;
   
 
-    gap: 20px;
-
+   
 }
 
 /* 🎨 Pil roterer, når dropdown åbnes */
@@ -170,7 +169,7 @@ html, body{
 
 /* 🎨 Når dropdown åbnes */
 .dropdown-box.show {
-    max-height: 1000px;
+    max-height: 150%;
     opacity: 1;
     padding: 20px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
@@ -184,76 +183,7 @@ html, body{
     width: 100%;
 }
 
-/* 🎨 Venstre boks med billeder */
-.info-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 45%; /* Giver plads til tekstboksen */
-    position: relative;
-}
 
-/* 🎨 Skråt ned billeder */
-.infographic-image {
-    height: auto;
-    transition: transform 0.3s ease;
-    transform-origin: center center;
-    gap: 20px;
-}
-
-/* 🎨 Justering af billeder fra infographic */
-.infographic-image:nth-child(1) {
-    transform: rotate(0deg) translateY(-50px);
-    position: absolute;
-    bottom: -10px;
-    left: 10px;
-    width: 35%;
-}
-
-.infographic-image:nth-child(2) {
-    transform: rotate(0deg) translateY(50px);
-    position: absolute;
-    bottom: 30px;
-    left: 160px;
-    width: 45%;
-}
-
-.infographic-image:nth-child(3) {
-    transform: rotate(0deg) translateY(-100px);
-    position: absolute;
-    left: 190px; /* Justeret afstand */
-    bottom: -325px; /* Justeret afstand */
-    width: 35%;
-}
-
-.infographic-image:nth-child(4) {
-    transform: rotate(0deg) translateY(100px);
-    position: absolute;
-    left: 370px; /* Justeret afstand */
-    bottom: -180px; /* Justeret afstand */
-    width: 35%;
-}
-
-/* 🎨 Hover-effekt, når musen er over billedet */
-.infographic-image:hover {
-    transform: scale(1.01); /* Skalerer lidt mindre end før */
-}
-
-/* 🎨 Højre boks med tekst */
-.text-box {
-    max-width: 800px;
-    line-height: 1.5;
-    padding: 20px;
-}
-.text-box p {
-    font-size: 24px; /* Juster skriftstørrelsen */
-    font-weight: bold; /* Fed skrift */
-    font-style: italic; /* Skrå skrift */
-    color: #6a1b1d; /* Mørk rød farve */
-    text-align: center; /* Centrer tekst */
-    margin-bottom: 20px; /* Afstand mellem afsnit */
-}
 
 /* 🎨 Dropdown-knap som en cirkel med sort pil */
 .dropdown-btn {
@@ -280,32 +210,137 @@ html, body{
     left: 0;
     width: 100%;
     background-color: #E1D4C7;
-    overflow: hidden;
-    max-height: 0;
+  
+    max-height: 0 ;
     padding: 0 20px;
     transition: max-height 1s ease-out, padding 0.3s ease, opacity 1s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     opacity: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between; /* Placerer billeder og tekst side om side */
-    height: 630px; /* Sætter højden på kasserne */
+    justify-content: flex-end; /* Placerer billeder og tekst side om side */
+    height: 730px; /* Sætter højden på kasserne */
 }
 
-.dropdown-text {
-    font-size: 22px;
-    font-weight: bold;
-}
+
 
 /* 🎨 Justering af pilen, når dropdown åbnes */
 .dropdown-btn.open .arrow {
     transform: rotate(180deg); /* Roter pilen */
 }
 
-/* Ikoner til oellene */
+.info-box {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    left: 5%;
+
+   
+}
+
+.info-item {
+    position: absolute;
+    width: 250px;
+    transition: transform 0.9s ease;
+}
+
+.info-item:hover {
+    transform: scale(1.05);
+    
+}
+
+
+.info-item img {
+    width: 100%;
+    display: block;
+}
+
+.info-item p {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform-origin: left;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #b22222;
+    pointer-events: none;
+    transform: rotate(-45deg);
+
+}
+
+.info-item:hover p {
+    opacity: 1;
+}
+#info1:hover img {
+    transform:  translateX(-80px) translateY(80px);
+    transition: 0.5s ease-in-out ;
+    z-index: 1;
+}
+#info2:hover img {
+    transform:  translateX(80px) translateY(-80px);
+    transition: 0.5s ease-in-out ;
+    z-index: 1;
+}
+
+#info3:hover img {
+    transform:  translateX(-80px) translateY(80px);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#info4:hover img {
+    transform:  translateX(80px) translateY(-80px);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/* Placering af elementerne skråt */
+#info1 { top: 0%; left: 10%; }
+#info2 { top: 10%; left: 35%; }
+#info3 { top: 25%; left: 48%; }
+#info4 { top: 35%; left: 70%; }
+
+/* Skrå tekster rotationsgrad */
+
+#info1 p { 
+    transform: rotate(-51deg) ; 
+    top: 85%; 
+    left: -60%;
+    width: 140%; 
+    font-size: 15px;
+    }
+
+#info2 p { 
+    transform: rotate(-50deg); 
+    top: 180%; 
+    left: -140%;
+    width: 250%; 
+}
+
+ #info3 p { 
+    transform: rotate(-51deg);             
+    top: 60%; 
+    left: -30%;
+    width: 230%; 
+    text-align: right;
+    
+}
+
+
+#info4 p { 
+    transform: rotate(-51deg); 
+    top: 90%; 
+    left: -60%;
+    width: 250%; 
+ }
+
+
+
 .icon-container {
     display: flex;
     gap: 10px;
+    margin-bottom: 1rem;
 }
 .icon {
 
@@ -322,6 +357,8 @@ html, body{
     border-radius: 50%;
 }
 .popup {
+
+ 
     transform: translateX(-50%);
     transform: translateY(-300%);
     background-color: rgba(0, 0, 0, 0.8);
@@ -349,39 +386,41 @@ html, body{
 }
 
 
+
+
+
 .image-container {
     position: relative;
     width: 100%; /* Justér efter behov */
     height: auto;
+    
   }
   
   .baggrund {
 width: 100%;
 height: auto;
     z-index: 0;
- 
   }
   
   .ol {
     position: absolute;
     top: 10%;
     left: 45%; /* Flyt billedet til siden */
-    width: 200px;
+    width: 180px;
   }
   .vinger {
     position: absolute;
-   top: 10%;
-    left: 29.5%; /* Flyt billedet til siden */
-    width: 40rem;
-    animation: flap 0.5s infinite ease-in-out alternate; /* får vinger til at bevæge sig */
+    top: 10%;
+    left: 30.01%; /* Flyt billedet til siden */
+    width: 35rem;
+    padding-left: 2.3rem;
+    animation: flap 0.6s infinite ease-in-out alternate;
   }
-
-  /* animering af vinger */
     @keyframes flap {
         0% { transform: rotate(0deg) translateY(0) scale(1); }
         100% { transform: rotate(-2deg) translateY(-5px) scale(1.05); }
+       
     }
-
   .ol:hover {
     transform: scale(1.1); /* Gør billedet lidt større ved hover */
   transition: 0.5s;

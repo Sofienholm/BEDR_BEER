@@ -1,35 +1,108 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #eee0d5;
+ 
+    font-family: Arial, sans-serif;
 }
-.icon-container {
-    display: flex;
-    gap: 20px;
-}
-.icon {
+
+.info-box {
     position: relative;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-}
-.icon img {
     width: 100%;
-    height: auto;
+    height: 120vh;
+    overflow-x: hidden;
+   
 }
-.popup {
+
+.info-item {
     position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    width: 250px;
+    transition: transform 0.9s ease;
 }
+
+.info-item:hover {
+    transform: scale(1.05);
+    
+}
+
+
+.info-item img {
+    width: 100%;
+    display: block;
+}
+
+.info-item p {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform-origin: left;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #b22222;
+    pointer-events: none;
+    transform: rotate(-45deg);
+
+}
+
+.info-item:hover p {
+    opacity: 1;
+}
+#info1:hover img {
+    transform:  translateX(-80px) translateY(80px);
+    transition: 0.5s ease-in-out ;
+    z-index: 1;
+}
+#info2:hover img {
+    transform:  translateX(80px) translateY(-80px);
+    transition: 0.5s ease-in-out ;
+    z-index: 1;
+}
+
+#info3:hover img {
+    transform:  translateX(-80px) translateY(80px);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#info4:hover img {
+    transform:  translateX(80px) translateY(-80px);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/* Placering af elementerne skråt */
+#info1 { top: 0%; left: 10%; }
+#info2 { top: 10%; left: 35%; }
+#info3 { top: 25%; left: 48%; }
+#info4 { top: 35%; left: 70%; }
+
+/* Skrå tekster rotationsgrad */
+
+#info1 p { 
+    transform: rotate(-51deg) ; 
+    top: 40%; 
+    left: -30%;
+    width: 100%; 
+    }
+
+#info2 p { 
+    transform: rotate(-50deg); 
+    top: 120%; 
+    left: -80%;
+    width: 1000%; 
+}
+
+ #info3 p { 
+    transform: rotate(-51deg);             
+    top: 30%; 
+    left: 10%;
+    width: 1000%; 
+    
+}
+
+
+#info4 p { 
+    transform: rotate(-51deg); 
+    top: 100%; 
+    left: -60%;
+    width: 1000%; 
+ }
