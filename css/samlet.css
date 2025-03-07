@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* styling af header (topmenuen) */
 header {
     background: #E1D4C7;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -18,6 +19,7 @@ header {
     height: 100%;
 }
 
+/* Styling af navigationens liste */
 header .navbar ul {
     list-style: none;
     display: flex;
@@ -25,12 +27,13 @@ header .navbar ul {
     justify-content: space-between;
 }
 
+/* styling af hvert menupunkt */
 header .navbar ul li {
     position: relative;
     float: left;
 }
 
-
+/* styling af links i menuen */
 header .navbar ul li a {
     text-decoration: none;
     font-weight: 850;
@@ -46,12 +49,14 @@ header .navbar ul li a:hover {
     color: #fff;
 }
 
+/* styling af dropdown-menuer */
 header .navbar ul li ul {
     position: absolute;
     background: #fff;
     display: none;
 }
 
+/* styling af dropdown-menuens individuelle punkter */
 header .navbar ul li ul li {
     width: 100%;
     border-top: 1px solid rgba(0,0,0,0.1);
@@ -64,6 +69,7 @@ header .navbar ul li:hover > ul {
     display: block;
 }
 
+/* skjuler menu-checkbox til mobilmenu */
 #menu-bar {
     display: none;
 }
@@ -74,7 +80,7 @@ header label {
     cursor: pointer;
     display: none;
 }
-/* Juster størrelsen på billedet */
+/* Juster størrelsen på søgeikonet */
 .search-icon {
     width: 20px; /* Ændr værdien efter behov */
     height: auto;
@@ -96,6 +102,7 @@ header label {
     list-style: none;
   }
   
+  /* skjuler søgefeltet som standard */
   .search-input {
     position: absolute;
     top: 50%;
@@ -110,6 +117,7 @@ header label {
     background-color: #E1D4C7;
   }
   
+  /* viser søgefeltet når søgeikonet aktiveres */
   .search-box.active .search-input {
     width: 150px;  /* Justér efter behov */
     opacity: 1;
@@ -122,9 +130,9 @@ header label {
   
 .content {
     flex: 1;
-
-
 }
+
+/* styling af footer */
 footer {
         width: 100%;
         background-color: #114547;
@@ -132,6 +140,7 @@ footer {
         padding: 24px;
     }
     
+/* layout for indholdet i footeren */
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -139,22 +148,26 @@ footer {
     justify-content: space-between; /* Fordeler elementerne bedre */
     align-items: center;
 }
+/* styling af kolonnerne i footeren */
 .footer-columns {
     display: flex;
     gap: 250px; /* Reduceret afstand mellem tekststykkerne */
     flex-grow: 1; /* Sørger for fleksibilitet i layoutet */
     margin-left: -20px;
 }
+/* Styling af de individuelle footer-kolonner */
 .footer-column {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Mindre afstand mellem teksterne */
 }
+/* Styling af tekst i footeren */
 .footer-column p {
     font-weight: 600;
     margin: 0; /* Fjern ekstra margin */
     cursor: pointer;
 }
+/* Styling af sociale medie-ikoner */
 .social-icons img {
     width: 50px;  /* Justér størrelsen */
     height: 50px;

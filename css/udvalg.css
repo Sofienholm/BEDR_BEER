@@ -1,5 +1,5 @@
 * {
-
+    /* Generel reset eller styling */
 }
 h1{
     font-family: "acumin-variable", sans-serif;
@@ -16,6 +16,7 @@ html, body{
     flex-direction: column;
    }
 
+   /* Billede */
    .nyhed {
     width: 100%;       /* Ændrer bredden af billedet */
     height: auto;       /* Bevarer billedets proportioner */
@@ -23,6 +24,7 @@ html, body{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
+/* call to action knap */
 .cta-container {
     position: relative; /* Sørger for, at .cta-button forbliver fast */
     bottom: 180px;
@@ -44,12 +46,13 @@ html, body{
     transform: scale(1.05); /* Gør knappen lidt større, når man holder musen over den */
 }
 
+/* styrer opdelte bokse med farver og indhold */
 .container-box {
     display: flex; /* Brug flexbox til at arrangere elementerne */
     flex: 1; /* Begge kasser fylder lige meget */
     height: 630px; /* Sætter højden på kasserne */
     margin-top: -30px;
-justify-content: center;
+    justify-content: center;
     align-items: flex-start;
     position: relative;
     gap: 50px;
@@ -80,6 +83,7 @@ justify-content: center;
     
 }
 
+/* indhold af kasse til venstre */
 .box-left {
     display: flex;
     justify-items: center;
@@ -93,6 +97,8 @@ justify-content: center;
     margin: 0 auto;
     
 }
+
+/* indhold af kasse til højre */
 .box-right {
  
     display: flex; 
@@ -143,9 +149,6 @@ justify-content: center;
     
     display: flex;
 }
-
-
-
 
 
 /* 🎨 Dropdown-containeren */
@@ -199,7 +202,7 @@ justify-content: center;
     gap: 20px;
 }
 
-/* 🎨 Justering af billeder */
+/* 🎨 Justering af billeder fra infographic */
 .infographic-image:nth-child(1) {
     transform: rotate(0deg) translateY(-50px);
     position: absolute;
@@ -299,10 +302,7 @@ justify-content: center;
     transform: rotate(180deg); /* Roter pilen */
 }
 
-
-
-
-
+/* Ikoner til oellene */
 .icon-container {
     display: flex;
     gap: 10px;
@@ -322,8 +322,6 @@ justify-content: center;
     border-radius: 50%;
 }
 .popup {
-
- 
     transform: translateX(-50%);
     transform: translateY(-300%);
     background-color: rgba(0, 0, 0, 0.8);
@@ -351,9 +349,6 @@ justify-content: center;
 }
 
 
-
-
-
 .image-container {
     position: relative;
     width: 100%; /* Justér efter behov */
@@ -378,13 +373,15 @@ height: auto;
    top: 10%;
     left: 29.5%; /* Flyt billedet til siden */
     width: 40rem;
-    animation: flap 0.5s infinite ease-in-out alternate;
+    animation: flap 0.5s infinite ease-in-out alternate; /* får vinger til at bevæge sig */
   }
+
+  /* animering af vinger */
     @keyframes flap {
         0% { transform: rotate(0deg) translateY(0) scale(1); }
         100% { transform: rotate(-2deg) translateY(-5px) scale(1.05); }
-       
     }
+
   .ol:hover {
     transform: scale(1.1); /* Gør billedet lidt større ved hover */
   transition: 0.5s;
