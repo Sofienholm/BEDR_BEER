@@ -1,418 +1,504 @@
-* {
+* {}
+
+h1 {
+	font-family: "acumin-variable", sans-serif;
+	font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
+	font-size: 12rem;
+	color: #403836;
 
 }
-h1{
-    font-family: "acumin-variable", sans-serif;
-    font-variation-settings: 'wght' 900, 'wdth' 50, 'slnt' -12;
-    font-size: 12rem;
-    color: #403836;
-    
-}
-html, body{
-    font-family: 'Poppins', sans-serif; /* Standard font */
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-   }
 
-   /* Billede */
-   .nyhed {
-    width: 100%;       /* Ændrer bredden af billedet */
-    height: auto;       /* Bevarer billedets proportioner */
-    z-index: 0;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+	/* Standard font */
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+/* Billede */
+.nyhed {
+	width: 100%;
+	/* Ændrer bredden af billedet */
+	height: auto;
+	/* Bevarer billedets proportioner */
+	z-index: 0;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* call to action knap */
 .cta-container {
-    position: relative; /* Sørger for, at .cta-button forbliver fast */
-    bottom: 140px;
-    margin-left: 145px;
+	position: relative;
+	/* Sørger for, at .cta-button forbliver fast */
+	bottom: 140px;
+	margin-left: 145px;
 }
 
 .cta-button {
-    background-color: #403836; /* Baggrund */
-    color: #f9e582; /* Tekst farve */
-    padding: 15px 30px; /* Indvendig afstand */
-    text-decoration: none; /* Fjerner understregning på linket */
-    border-radius: 5px; /* Runde hjørner */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-family: "acumin-variable", sans-serif;
-    font-variation-settings: 'wght' 800, 'wdth' 80, 'slnt' -12;
-    z-index: 5;
+	background-color: #403836;
+	/* Baggrund */
+	color: #f9e582;
+	/* Tekst farve */
+	padding: 15px 30px;
+	/* Indvendig afstand */
+	text-decoration: none;
+	/* Fjerner understregning på linket */
+	border-radius: 5px;
+	/* Runde hjørner */
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	font-family: "acumin-variable", sans-serif;
+	font-variation-settings: 'wght' 800, 'wdth' 80, 'slnt' -12;
+	z-index: 5;
 }
 
 .cta-button:hover {
-    background-color: #eb6a47; /* Ændrer baggrundsfarven ved hover */
-    transform: scale(1.05); /* Gør knappen lidt større, når man holder musen over den */
+	background-color: #eb6a47;
+	/* Ændrer baggrundsfarven ved hover */
+	transform: scale(1.05);
+	/* Gør knappen lidt større, når man holder musen over den */
 }
 
 /* styrer opdelte bokse med farver og indhold */
 .container-box {
-    display: flex; /* Brug flexbox til at arrangere elementerne */
-    flex: 1; /* Begge kasser fylder lige meget */
-    height: 630px; /* Sætter højden på kasserne */
-    margin-top: -30px;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    gap: 50px;
-    padding: 70px;
-    
+	display: flex;
+	/* Brug flexbox til at arrangere elementerne */
+	flex: 1;
+	/* Begge kasser fylder lige meget */
+	height: 630px;
+	/* Sætter højden på kasserne */
+	margin-top: -30px;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	gap: 50px;
+	padding: 70px;
+
 }
 
 /* id baggrundsfarve til de forskellige opdelinger */
-#olet{
-    background-color: #f9e67b;
+#olet {
+	background-color: #f9e67b;
 }
-#olto{
-    background-color: #e88b9b;
+
+#olto {
+	background-color: #e88b9b;
 }
-#oltre{
-    background-color: #d2d25f;
+
+#oltre {
+	background-color: #d2d25f;
 }
-#olfire{
-    background-color: #819a71;
+
+#olfire {
+	background-color: #819a71;
 }
-#olfem{
-    background-color: #f18548;
+
+#olfem {
+	background-color: #f18548;
 }
-#olseks{
-    background-color: #92db85;
+
+#olseks {
+	background-color: #92db85;
 }
+
 .box {
-  
-    height: 630px; /* Sætter højden på kasserne */
-    
+
+	height: 630px;
+	/* Sætter højden på kasserne */
+
 }
 
 /* indhold af kasse til venstre */
 .box-left {
-    display: flex;
-    justify-items: center;
-    /* Sikrer at billedet fylder hele bredden af boksen */
-    height: auto; /* Bevarer billedets proportioner */
-  
+	display: flex;
+	justify-items: center;
+	/* Sikrer at billedet fylder hele bredden af boksen */
+	height: auto;
+	/* Bevarer billedets proportioner */
+
 }
-.box-left img{
-    max-width: 19rem; /* Sikrer at billedet fylder hele bredden af boksen */
-    height: auto; /* Bevarer billedets proportioner */
-    margin: 0 auto;
-    
+
+.box-left img {
+	max-width: 19rem;
+	/* Sikrer at billedet fylder hele bredden af boksen */
+	height: auto;
+	/* Bevarer billedets proportioner */
+	margin: 0 auto;
+
 }
 
 /* indhold af kasse til højre */
 .box-right {
-    display: flex; 
-    flex-direction: column; /* Arrangerer indholdet i en kolonne */
-    align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	/* Arrangerer indholdet i en kolonne */
+	align-items: flex-start;
 }
 
 .box-right h2 {
-    font-size: 50px; /* Størrelse på overskriften */
-    color: #403836; /* Farve på overskriften */
-    text-align: left;
-    margin-left: 120px;
+	font-size: 50px;
+	/* Størrelse på overskriften */
+	color: #403836;
+	/* Farve på overskriften */
+	text-align: left;
+	margin-left: 120px;
 }
+
 .box-right p {
-    font-size: 27px; /* Størrelse på teksten */
-    color: #555; /* Farve på teksten */
-    text-align: left;
-    align-items: flex-start; /* Sørger for, at alt flugter til venstre */
-    padding-top: 5px; /* Eventuelt lidt padding for at finjustere placering */
-    margin-left: 120px;
+	font-size: 27px;
+	/* Størrelse på teksten */
+	color: #555;
+	/* Farve på teksten */
+	text-align: left;
+	align-items: flex-start;
+	/* Sørger for, at alt flugter til venstre */
+	padding-top: 5px;
+	/* Eventuelt lidt padding for at finjustere placering */
+	margin-left: 120px;
 }
 
 .tekst p {
-    font-size: 27px; /* Størrelse på teksten */
-    color: #555; /* Farve på teksten */
-    text-align: left;
-    align-items: flex-start; /* Sørger for, at alt flugter til venstre */
-    padding-top: 5px; /* Eventuelt lidt padding for at finjustere placering */
-    margin-left: 120px;
- 
+	font-size: 27px;
+	/* Størrelse på teksten */
+	color: #555;
+	/* Farve på teksten */
+	text-align: left;
+	align-items: flex-start;
+	/* Sørger for, at alt flugter til venstre */
+	padding-top: 5px;
+	/* Eventuelt lidt padding for at finjustere placering */
+	margin-left: 120px;
+
 }
 
 .tekst h2 {
-    font-size: 50px; /* Størrelse på overskriften */
-    color: #403836; /* Farve på overskriften */
-    text-align: left;
-    margin-left: 120px;
-}
-.olbillede img{
-    max-width: 19rem; /* Sikrer at billedet fylder hele bredden af boksen */
-    height: auto; /* Bevarer billedets proportioner */
-    margin: 0 auto;
-}
-.olbillede{
-    
-    display: flex;
+	font-size: 50px;
+	/* Størrelse på overskriften */
+	color: #403836;
+	/* Farve på overskriften */
+	text-align: left;
+	margin-left: 120px;
 }
 
+.olbillede img {
+	max-width: 19rem;
+	/* Sikrer at billedet fylder hele bredden af boksen */
+	height: auto;
+	/* Bevarer billedets proportioner */
+	margin: 0 auto;
+}
 
+.olbillede {
 
+	display: flex;
+}
 
 
 /* 🎨 Dropdown-containeren */
 .dropdown-container {
-    display: inline-flex; /* Sørger for, at teksten og knappen placeres horisontalt */
-    align-items: center; /* Centrerer indholdet vertikalt */
-  gap: 1rem;
+	display: inline-flex;
+	/* Sørger for, at teksten og knappen placeres horisontalt */
+	align-items: center;
+	/* Centrerer indholdet vertikalt */
+	gap: 1rem;
 }
 
 /* 🎨 Pil roterer, når dropdown åbnes */
 .arrow {
-    transition: transform 0.3s ease;
+	transition: transform 0.3s ease;
 }
 
 
 /* 🎨 Når dropdown åbnes */
 .dropdown-box.show {
-    max-height: 150%;
-    opacity: 1;
-    padding: 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	max-height: 150%;
+	opacity: 1;
+	padding: 20px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* 🎨 Wrapper til indholdet */
 .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 
 /* 🎨 Dropdown-knap som en cirkel med sort pil */
 .dropdown-btn {
-    background-color: transparent;  /* Gør baggrunden gennemsigtig */
-    color: black;                   /* Sætter tekstfarven til sort */
-    padding: 10px 20px;             /* Tilføjer ekstra plads til teksten */
-    border: 2px solid black;        /* Tilføjer en sort kant rundt om cirklen */
-    border-radius: 50%;             /* Gør knappen til en cirkel */
-    cursor: pointer;
-    font-size: 24px;                /* Størrelse på pilen */
-    display: flex;           /* Sørger for tekst og pil er ved siden af hinanden */
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    height: 50px;
-    width: 50px;
+	background-color: transparent;
+	/* Gør baggrunden gennemsigtig */
+	color: black;
+	/* Sætter tekstfarven til sort */
+	padding: 10px 20px;
+	/* Tilføjer ekstra plads til teksten */
+	border: 2px solid black;
+	/* Tilføjer en sort kant rundt om cirklen */
+	border-radius: 50%;
+	/* Gør knappen til en cirkel */
+	cursor: pointer;
+	font-size: 24px;
+	/* Størrelse på pilen */
+	display: flex;
+	/* Sørger for tekst og pil er ved siden af hinanden */
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	height: 50px;
+	width: 50px;
 }
 
 /* 🎨 Dropdown-boksen */
 .dropdown-box {
-    position: static;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #E1D4C7;
-  
-    max-height: 0 ;
-    padding: 0 20px;
-    transition: max-height 1s ease-out, padding 0.3s ease, opacity 1s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: flex-end; /* Placerer billeder og tekst side om side */
-    height: 730px; /* Sætter højden på kasserne */
+	position: static;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #E1D4C7;
+
+	max-height: 0;
+	padding: 0 20px;
+	transition: max-height 1s ease-out, padding 0.3s ease, opacity 1s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: flex-end;
+	/* Placerer billeder og tekst side om side */
+	height: 730px;
+	/* Sætter højden på kasserne */
 }
 
 /* 🎨 Justering af pilen, når dropdown åbnes */
 .dropdown-btn.open .arrow {
-    transform: rotate(180deg); /* Roter pilen */
+	transform: rotate(180deg);
+	/* Roter pilen */
 }
 
 /* dropdown boks med indhold */
 .info-box {
-    position: relative;
-    width: 100%;
-    height: 120vh;
-    left: 5%;
+	position: relative;
+	width: 100%;
+	height: 120vh;
+	left: 5%;
 }
 
 .info-item {
-    position: absolute;
-    width: 250px;
-    transition: transform 0.9s ease;
+	position: absolute;
+	width: 250px;
+	transition: transform 0.9s ease;
 }
 
 .info-item:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .info-item img {
-    width: 100%;
-    display: block;
+	width: 100%;
+	display: block;
 }
 
 .info-item p {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s;
-    transform-origin: left;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-    color: #b22222;
-    pointer-events: none;
-    transform: rotate(-45deg);
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.3s;
+	transform-origin: left;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	color: #b22222;
+	pointer-events: none;
+	transform: rotate(-45deg);
 }
 
 .info-item:hover p {
-    opacity: 1;
+	opacity: 1;
 }
+
 #info1:hover img {
-    transform:  translateX(-80px) translateY(80px);
-    transition: 0.5s ease-in-out ;
-    z-index: 1;
+	transform: translateX(-80px) translateY(80px);
+	transition: 0.5s ease-in-out;
+	z-index: 1;
 }
+
 #info2:hover img {
-    transform:  translateX(80px) translateY(-80px);
-    transition: 0.5s ease-in-out ;
-    z-index: 1;
+	transform: translateX(80px) translateY(-80px);
+	transition: 0.5s ease-in-out;
+	z-index: 1;
 }
 
 #info3:hover img {
-    transform:  translateX(-80px) translateY(80px);
-    transition: 0.5s;
-    z-index: 1;
+	transform: translateX(-80px) translateY(80px);
+	transition: 0.5s;
+	z-index: 1;
 }
 
 #info4:hover img {
-    transform:  translateX(80px) translateY(-80px);
-    transition: 0.5s;
-    z-index: 1;
+	transform: translateX(80px) translateY(-80px);
+	transition: 0.5s;
+	z-index: 1;
 }
 
 /* Placering af elementerne skråt */
-#info1 { top: 0%; left: 10%; }
-#info2 { top: 10%; left: 35%; }
-#info3 { top: 25%; left: 48%; }
-#info4 { top: 35%; left: 70%; }
+#info1 {
+	top: 0%;
+	left: 10%;
+}
+
+#info2 {
+	top: 10%;
+	left: 35%;
+}
+
+#info3 {
+	top: 25%;
+	left: 48%;
+}
+
+#info4 {
+	top: 35%;
+	left: 70%;
+}
 
 /* Skrå tekster rotationsgrad */
-#info1 p { 
-    transform: rotate(-51deg) ; 
-    top: 85%; 
-    left: -60%;
-    width: 140%; 
-    font-size: 15px;
-    }
-
-#info2 p { 
-    transform: rotate(-50deg); 
-    top: 180%; 
-    left: -140%;
-    width: 250%; 
+#info1 p {
+	transform: rotate(-51deg);
+	top: 85%;
+	left: -60%;
+	width: 140%;
+	font-size: 15px;
 }
 
- #info3 p { 
-    transform: rotate(-51deg);             
-    top: 60%; 
-    left: -30%;
-    width: 230%; 
-    text-align: right;
-    
+#info2 p {
+	transform: rotate(-50deg);
+	top: 180%;
+	left: -140%;
+	width: 250%;
 }
 
-#info4 p { 
-    transform: rotate(-51deg); 
-    top: 90%; 
-    left: -60%;
-    width: 250%; 
- }
+#info3 p {
+	transform: rotate(-51deg);
+	top: 60%;
+	left: -30%;
+	width: 230%;
+	text-align: right;
+
+}
+
+#info4 p {
+	transform: rotate(-51deg);
+	top: 90%;
+	left: -60%;
+	width: 250%;
+}
 
 
 /* ikoner */
 .icon-container {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 1rem;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 1rem;
 }
+
 .icon {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
 }
+
 .icon img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
+
 .icon img:hover {
-   background-color: #fbaa1b;
-    border-radius: 50%;
+	background-color: #fbaa1b;
+	border-radius: 50%;
 }
 
 /* pop up effekt af ikoner */
 .popup {
-    transform: translateX(-50%);
-    transform: translateY(-300%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    width: 6rem;
-    text-align: center;
+	transform: translateX(-50%);
+	transform: translateY(-300%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	width: 6rem;
+	text-align: center;
 }
-.ikonn{
-    position: relative;
-   left: 120px;
-   top: 40px;
+
+.ikonn {
+	position: relative;
+	left: 120px;
+	top: 40px;
 }
 
 .beer-section {
-    background-color: #e8dccb;
-    height: auto;
-    text-align: center;
+	background-color: #e8dccb;
+	height: auto;
+	text-align: center;
 }
 
 
 /* container af flaske billede */
 .image-container {
-    position: relative;
-    width: 100%; /* Justér efter behov */
-    height: auto;
-    
-  }
-  
-  /* styling af baggrund */
-  .baggrund {
-width: 100%;
-height: auto;
-    z-index: 0;
-  }
-  
-  /* styling af flaskebillede */
-  .ol {
-    position: absolute;
-    top: 10%;
-    left: 45%; /* Flyt billedet til siden */
-    width: 180px;
-  }
-  /* styling af vingebillede */
-  .vinger {
-    position: absolute;
-    top: 10%;
-    left: 30.01%; /* Flyt billedet til siden */
-    width: 35rem;
-    padding-left: 2.3rem;
-    animation: flap 0.6s infinite ease-in-out alternate;
-  }
-  /* funktion af vingebevægelse */
-    @keyframes flap {
-        0% { transform: rotate(0deg) translateY(0) scale(1); }
-        100% { transform: rotate(-2deg) translateY(-5px) scale(1.05); }
-    }
-  .ol:hover {
-    transform: scale(1.1); /* Gør billedet lidt større ved hover */
-  transition: 0.5s;
-  }
+	position: relative;
+	width: 100%;
+	/* Justér efter behov */
+	height: auto;
+
+}
+
+/* styling af baggrund */
+.baggrund {
+	width: 100%;
+	height: auto;
+	z-index: 0;
+}
+
+/* styling af flaskebillede */
+.ol {
+	position: absolute;
+	top: 10%;
+	left: 45%;
+	/* Flyt billedet til siden */
+	width: 180px;
+}
+
+/* styling af vingebillede */
+.vinger {
+	position: absolute;
+	top: 10%;
+	left: 30.01%;
+	/* Flyt billedet til siden */
+	width: 35rem;
+	padding-left: 2.3rem;
+	animation: flap 0.6s infinite ease-in-out alternate;
+}
+
+/* funktion af vingebevægelse */
+@keyframes flap {
+	0% {
+		transform: rotate(0deg) translateY(0) scale(1);
+	}
+
+	100% {
+		transform: rotate(-2deg) translateY(-5px) scale(1.05);
+	}
+}
+
+.ol:hover {
+	transform: scale(1.1);
+	/* Gør billedet lidt større ved hover */
+	transition: 0.5s;
+}
